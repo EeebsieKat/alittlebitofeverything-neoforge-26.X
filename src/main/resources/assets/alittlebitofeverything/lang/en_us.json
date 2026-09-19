@@ -1,0 +1,13 @@
+{
+  "itemGroup.alittlebitofeverything": "Example Mod Tab",
+  "block.alittlebitofeverything.example_block": "Example Block",
+  "item.alittlebitofeverything.example_item": "Example Item",
+
+  "alittlebitofeverything.configuration.title": "A Little Bit of Everything Configs",
+  "alittlebitofeverything.configuration.section.alittlebitofeverything.common.toml": "A Little Bit of Everything Configs",
+  "alittlebitofeverything.configuration.section.alittlebitofeverything.common.toml.title": "A Little Bit of Everything Configs",
+  "alittlebitofeverything.configuration.items": "Item List",
+  "alittlebitofeverything.configuration.logDirtBlock": "Log Dirt Block",
+  "alittlebitofeverything.configuration.magicNumberIntroduction": "Magic Number Text",
+  "alittlebitofeverything.configuration.magicNumber": "Magic Number"
+}

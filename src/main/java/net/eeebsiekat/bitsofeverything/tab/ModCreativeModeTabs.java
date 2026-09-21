@@ -1,6 +1,7 @@
 package net.eeebsiekat.bitsofeverything.tab;
 
 import net.eeebsiekat.bitsofeverything.ALittleBitofEverything;
+import net.eeebsiekat.bitsofeverything.block.ModBlocks;
 import net.eeebsiekat.bitsofeverything.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -28,10 +29,10 @@ public class ModCreativeModeTabs {
                     .build());
 
     public static final Supplier<CreativeModeTab> EVERYTHING_BLOCKS_TAB = CREATIVE_MODE_TABS.register("everything_blocks_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.LONSDALEITE_FRAGMENT.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.LONSDALEITE_CUBE.get()))
                     .title(Component.translatable("creativetab.alittlebitofeverything.everything_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.LONSDALEITE_FRAGMENT);
+                        output.accept(ModBlocks.LONSDALEITE_CUBE);
                     })
 
                     .build());

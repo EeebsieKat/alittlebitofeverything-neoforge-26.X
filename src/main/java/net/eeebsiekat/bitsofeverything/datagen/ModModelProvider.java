@@ -1,6 +1,7 @@
 package net.eeebsiekat.bitsofeverything.datagen;
 
 import net.eeebsiekat.bitsofeverything.ALittleBitofEverything;
+import net.eeebsiekat.bitsofeverything.block.ModBlocks;
 import net.eeebsiekat.bitsofeverything.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
@@ -18,5 +19,8 @@ public class ModModelProvider extends ModelProvider {
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
         itemModels.generateFlatItem(ModItems.LONSDALEITE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.LONSDALEITE_FRAGMENT.get(), ModelTemplates.FLAT_ITEM);
+
+        //Blocks
+        blockModels.createTrivialCube(ModBlocks.LONSDALEITE_CUBE.get());
     }
 }

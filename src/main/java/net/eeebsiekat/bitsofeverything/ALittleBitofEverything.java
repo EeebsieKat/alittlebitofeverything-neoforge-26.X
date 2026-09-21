@@ -1,5 +1,6 @@
 package net.eeebsiekat.bitsofeverything;
 
+import net.eeebsiekat.bitsofeverything.block.ModBlocks;
 import net.eeebsiekat.bitsofeverything.item.ModItems;
 import net.eeebsiekat.bitsofeverything.tab.ModCreativeModeTabs;
 import org.slf4j.Logger;
@@ -30,6 +31,7 @@ public class ALittleBitofEverything {
 
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
@@ -41,10 +43,7 @@ public class ALittleBitofEverything {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.LONSDALEITE);
-            event.accept(ModItems.LONSDALEITE_FRAGMENT);
-        }
+
     }
 
     @SubscribeEvent

@@ -1,6 +1,9 @@
 {
   "item.alittlebitofeverything.lonsdaleite": "Lonsdaleite",
   "item.alittlebitofeverything.lonsdaleite_fragment": "Lonsdaleite Fragment",
+
+  "block.alittlebitofeverything.lonsdaleite_cube": "Lonsdaleite Cube",
+
   "creativetab.alittlebitofeverything.everything_items": "A Little Bit of Items",
   "creativetab.alittlebitofeverything.everything_blocks": "A Little Bit of Blocks"
 }

@@ -33,6 +33,10 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.alittlebitofeverything.everything_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.LONSDALEITE_CUBE);
+                        output.accept(ModBlocks.LONSDALEITE_FRAGMENT_CUBE);
+                        output.accept(ModBlocks.METEORITE_STONE);
+                        output.accept(ModBlocks.OLIVINE);
+                        output.accept(ModBlocks.PIGEONITE);
                     })
 
                     .build());

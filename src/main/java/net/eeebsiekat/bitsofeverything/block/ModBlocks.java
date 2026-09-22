@@ -2,8 +2,10 @@ package net.eeebsiekat.bitsofeverything.block;
 
 import net.eeebsiekat.bitsofeverything.ALittleBitofEverything;
 import net.eeebsiekat.bitsofeverything.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -18,7 +20,20 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> LONSDALEITE_CUBE = registerBlock("lonsdaleite_cube",
             properties -> new Block(properties.strength(4f)
-                    .requiresCorrectToolForDrops().sound(SoundType.METAL)));
+                    .requiresCorrectToolForDrops().sound(SoundType.IRON)));
+    public static final DeferredBlock<Block> LONSDALEITE_FRAGMENT_CUBE = registerBlock("lonsdaleite_fragment_cube",
+            properties -> new Block(properties.strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.IRON)));
+
+    public static final DeferredBlock<Block> METEORITE_STONE = registerBlock("meteorite_stone",
+            properties -> new DropExperienceBlock(UniformInt.of(3, 7), properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> OLIVINE = registerBlock("olivine",
+            properties -> new Block(properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> PIGEONITE = registerBlock("pigeonite",
+            properties -> new Block(properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function) {

@@ -22,5 +22,9 @@ public class ModModelProvider extends ModelProvider {
 
         //Blocks
         blockModels.createTrivialCube(ModBlocks.LONSDALEITE_CUBE.get());
+        blockModels.createTrivialCube(ModBlocks.LONSDALEITE_FRAGMENT_CUBE.get());
+        blockModels.createTrivialCube(ModBlocks.METEORITE_STONE.get());
+        blockModels.createTrivialCube(ModBlocks.OLIVINE.get());
+        blockModels.createTrivialCube(ModBlocks.PIGEONITE.get());
     }
 }

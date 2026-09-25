@@ -11,6 +11,10 @@ public class ModItems {
 
     public static final DeferredItem<Item> LONSDALEITE = ITEMS.registerSimpleItem("lonsdaleite");
     public static final DeferredItem<Item> LONSDALEITE_FRAGMENT = ITEMS.registerSimpleItem("lonsdaleite_fragment");
+    public static final DeferredItem<Item> RAW_OLIVINE = ITEMS.registerSimpleItem("raw_olivine");
+    public static final DeferredItem<Item> OLIVINE = ITEMS.registerSimpleItem("olivine");
+    public static final DeferredItem<Item> RAW_PIGEONITE = ITEMS.registerSimpleItem("raw_pigeonite");
+    public static final DeferredItem<Item> PIGEONITE = ITEMS.registerSimpleItem("pigeonite");
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

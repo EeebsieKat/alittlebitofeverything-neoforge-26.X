@@ -1,12 +1,17 @@
 {
   "item.alittlebitofeverything.lonsdaleite": "Lonsdaleite",
   "item.alittlebitofeverything.lonsdaleite_fragment": "Lonsdaleite Fragment",
+  "item.alittlebitofeverything.raw_olivine": "Raw Olivine",
+  "item.alittlebitofeverything.olivine": "Olivine",
+  "item.alittlebitofeverything.raw_pigeonite": "Raw Pigeonite",
+  "item.alittlebitofeverything.pigeonite": "Pigeonite",
 
   "block.alittlebitofeverything.lonsdaleite_cube": "Lonsdaleite Cube",
   "block.alittlebitofeverything.lonsdaleite_fragment_cube": "Lonsdaleite Fragment Cube",
   "block.alittlebitofeverything.meteorite_stone": "Meteorite Stone",
-  "block.alittlebitofeverything.olivine": "Olivine",
-  "block.alittlebitofeverything.pigeonite": "Pigeonite",
+  "block.alittlebitofeverything.meteorite_strata": "Meteorite Strata",
+  "block.alittlebitofeverything.olivine_block": "Olivine Block",
+  "block.alittlebitofeverything.pigeonite_block": "Pigeonite Block",
 
   "creativetab.alittlebitofeverything.everything_items": "A Little Bit of Items",
   "creativetab.alittlebitofeverything.everything_blocks": "A Little Bit of Blocks"

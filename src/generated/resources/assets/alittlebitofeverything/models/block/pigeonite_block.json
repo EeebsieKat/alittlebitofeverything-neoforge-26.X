@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "alittlebitofeverything:block/olivine"
+    "all": "alittlebitofeverything:block/pigeonite_block"
   }
 }

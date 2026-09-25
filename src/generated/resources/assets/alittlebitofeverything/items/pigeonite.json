@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "alittlebitofeverything:block/pigeonite"
+    "model": "alittlebitofeverything:item/pigeonite"
   }
 }

@@ -24,6 +24,10 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.LONSDALEITE);
                         output.accept(ModItems.LONSDALEITE_FRAGMENT);
+                        output.accept(ModItems.RAW_OLIVINE);
+                        output.accept(ModItems.OLIVINE);
+                        output.accept(ModItems.RAW_PIGEONITE);
+                        output.accept(ModItems.PIGEONITE);
                     })
 
                     .build());
@@ -35,6 +39,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LONSDALEITE_CUBE);
                         output.accept(ModBlocks.LONSDALEITE_FRAGMENT_CUBE);
                         output.accept(ModBlocks.METEORITE_STONE);
+                        output.accept(ModBlocks.METEORITE_STRATA);
                         output.accept(ModBlocks.OLIVINE);
                         output.accept(ModBlocks.PIGEONITE);
                     })

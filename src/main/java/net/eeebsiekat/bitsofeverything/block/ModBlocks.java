@@ -28,10 +28,14 @@ public class ModBlocks {
     public static final DeferredBlock<Block> METEORITE_STONE = registerBlock("meteorite_stone",
             properties -> new DropExperienceBlock(UniformInt.of(3, 7), properties.strength(3f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final DeferredBlock<Block> OLIVINE = registerBlock("olivine",
+        public static final DeferredBlock<Block> METEORITE_STRATA = registerBlock("meteorite_strata",
+            properties -> new DropExperienceBlock(UniformInt.of(5, 11), properties.strength(4f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> OLIVINE = registerBlock("olivine_block",
             properties -> new Block(properties.strength(3f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final DeferredBlock<Block> PIGEONITE = registerBlock("pigeonite",
+    public static final DeferredBlock<Block> PIGEONITE = registerBlock("pigeonite_block",
             properties -> new Block(properties.strength(3f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
 

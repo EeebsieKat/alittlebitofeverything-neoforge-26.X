@@ -19,11 +19,16 @@ public class ModModelProvider extends ModelProvider {
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
         itemModels.generateFlatItem(ModItems.LONSDALEITE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.LONSDALEITE_FRAGMENT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.RAW_OLIVINE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.OLIVINE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.RAW_PIGEONITE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.PIGEONITE.get(), ModelTemplates.FLAT_ITEM);
 
         //Blocks
         blockModels.createTrivialCube(ModBlocks.LONSDALEITE_CUBE.get());
         blockModels.createTrivialCube(ModBlocks.LONSDALEITE_FRAGMENT_CUBE.get());
         blockModels.createTrivialCube(ModBlocks.METEORITE_STONE.get());
+        blockModels.createTrivialCube(ModBlocks.METEORITE_STRATA.get());
         blockModels.createTrivialCube(ModBlocks.OLIVINE.get());
         blockModels.createTrivialCube(ModBlocks.PIGEONITE.get());
     }

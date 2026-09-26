@@ -6,6 +6,8 @@
   "item.alittlebitofeverything.raw_pigeonite": "Raw Pigeonite",
   "item.alittlebitofeverything.pigeonite": "Pigeonite",
 
+  "item.alittlebitofeverything.metal_detector.no_valueables": "No Valueables Found",
+
   "block.alittlebitofeverything.lonsdaleite_cube": "Lonsdaleite Cube",
   "block.alittlebitofeverything.lonsdaleite_fragment_cube": "Lonsdaleite Fragment Cube",
   "block.alittlebitofeverything.meteorite_stone": "Meteorite Stone",

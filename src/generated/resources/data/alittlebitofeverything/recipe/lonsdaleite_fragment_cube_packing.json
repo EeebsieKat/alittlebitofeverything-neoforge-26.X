@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "lonsdaleite",
+  "key": {
+    "A": "alittlebitofeverything:lonsdaleite_fragment"
+  },
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "id": "alittlebitofeverything:lonsdaleite_fragment_cube"
+  }
+}

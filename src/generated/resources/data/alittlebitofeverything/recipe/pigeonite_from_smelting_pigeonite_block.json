@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "pigeonite",
+  "ingredient": "alittlebitofeverything:pigeonite_block",
+  "result": {
+    "id": "alittlebitofeverything:pigeonite"
+  }
+}

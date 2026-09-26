@@ -3,7 +3,7 @@
   "category": "misc",
   "group": "lonsdaleite",
   "key": {
-    "A": "alittlebitofeverything:lonsdaleite_fragment"
+    "A": "alittlebitofeverything:rose_spar_shard"
   },
   "pattern": [
     "AAA",
@@ -11,6 +11,6 @@
     "AAA"
   ],
   "result": {
-    "id": "alittlebitofeverything:lonsdaleite_fragment_cube"
+    "id": "alittlebitofeverything:rose_spar_shard_block"
   }
 }

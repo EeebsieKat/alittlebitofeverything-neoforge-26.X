@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "alittlebitofeverything:block/meteorite_stone"
+    "all": "alittlebitofeverything:block/rose_spar_stone"
   }
 }

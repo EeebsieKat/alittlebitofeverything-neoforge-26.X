@@ -6,10 +6,8 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
@@ -29,15 +27,17 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        dropSelf(ModBlocks.LONSDALEITE_CUBE.get());
-        dropSelf(ModBlocks.LONSDALEITE_FRAGMENT_CUBE.get());
-        dropSelf(ModBlocks.METEORITE_STRATA.get());
-        dropSelf(ModBlocks.METEORITE_STONE.get());
+        dropSelf(ModBlocks.ROSE_SPAR_BLOCK.get());
+        dropSelf(ModBlocks.ROSE_SPAR_SHARD_BLOCK.get());
+        dropSelf(ModBlocks.CHRONDITE_STRATA.get());
+        dropSelf(ModBlocks.SINTERED_BRECCIA.get());
 
         add(ModBlocks.OLIVINE.get(),
                 createMultipleOreDrops(ModBlocks.OLIVINE.get(), ModItems.RAW_OLIVINE.get(), 2, 5));
         add(ModBlocks.PIGEONITE.get(),
                 createMultipleOreDrops(ModBlocks.PIGEONITE.get(), ModItems.RAW_PIGEONITE.get(), 2, 5));
+        add(ModBlocks.ROSE_SPAR_STONE.get(),
+                createMultipleOreDrops(ModBlocks.ROSE_SPAR_STONE.get(), ModItems.ROSE_SPAR_SHARD.get(), 4, 7));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minDrops, float maxDrops) {

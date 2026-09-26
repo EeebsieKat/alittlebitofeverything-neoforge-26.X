@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "alittlebitofeverything:meteorite_stone"
+          "name": "alittlebitofeverything:chrondite_strata"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "alittlebitofeverything:blocks/meteorite_stone"
+  "random_sequence": "alittlebitofeverything:blocks/chrondite_strata"
 }

@@ -5,7 +5,6 @@ import net.eeebsiekat.bitsofeverything.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
-import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 
@@ -19,21 +18,21 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.LONSDALEITE_CUBE.get())
-                .add(ModBlocks.LONSDALEITE_FRAGMENT_CUBE.get())
-                .add(ModBlocks.METEORITE_STONE.get())
-                .add(ModBlocks.METEORITE_STRATA.get())
+                .add(ModBlocks.ROSE_SPAR_BLOCK.get())
+                .add(ModBlocks.ROSE_SPAR_SHARD_BLOCK.get())
+                .add(ModBlocks.SINTERED_BRECCIA.get())
+                .add(ModBlocks.CHRONDITE_STRATA.get())
                 .add(ModBlocks.OLIVINE.get())
                 .add(ModBlocks.PIGEONITE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.METEORITE_STONE.get())
+                .add(ModBlocks.SINTERED_BRECCIA.get())
                 .add(ModBlocks.OLIVINE.get())
                 .add(ModBlocks.PIGEONITE.get());
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.LONSDALEITE_CUBE.get())
-                .add(ModBlocks.LONSDALEITE_FRAGMENT_CUBE.get());
+                .add(ModBlocks.ROSE_SPAR_BLOCK.get())
+                .add(ModBlocks.ROSE_SPAR_SHARD_BLOCK.get());
         tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
-                .add(ModBlocks.METEORITE_STRATA.get());
+                .add(ModBlocks.CHRONDITE_STRATA.get());
     }
 }

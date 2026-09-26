@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "alittlebitofeverything:meteorite_strata"
+          "name": "alittlebitofeverything:sintered_breccia"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "alittlebitofeverything:blocks/meteorite_strata"
+  "random_sequence": "alittlebitofeverything:blocks/sintered_breccia"
 }

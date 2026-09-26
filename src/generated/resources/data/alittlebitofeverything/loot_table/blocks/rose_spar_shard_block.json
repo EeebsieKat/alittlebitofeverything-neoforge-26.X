@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "alittlebitofeverything:lonsdaleite_fragment_cube"
+          "name": "alittlebitofeverything:rose_spar_shard_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "alittlebitofeverything:blocks/lonsdaleite_fragment_cube"
+  "random_sequence": "alittlebitofeverything:blocks/rose_spar_shard_block"
 }

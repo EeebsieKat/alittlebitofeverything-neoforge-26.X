@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lonsdaleite_fragment": {
+    "has_rose_spar_shard": {
       "conditions": {
         "items": [
           {
-            "items": "alittlebitofeverything:lonsdaleite_fragment"
+            "items": "alittlebitofeverything:rose_spar_shard"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_lonsdaleite_fragment"
+      "has_rose_spar_shard"
     ]
   ],
   "rewards": {

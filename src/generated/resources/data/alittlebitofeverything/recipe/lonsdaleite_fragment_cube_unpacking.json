@@ -3,10 +3,10 @@
   "category": "misc",
   "group": "lonsdaleite",
   "ingredients": [
-    "alittlebitofeverything:lonsdaleite_fragment_cube"
+    "alittlebitofeverything:rose_spar_shard_block"
   ],
   "result": {
     "count": 9,
-    "id": "alittlebitofeverything:lonsdaleite_fragment"
+    "id": "alittlebitofeverything:rose_spar_shard"
   }
 }

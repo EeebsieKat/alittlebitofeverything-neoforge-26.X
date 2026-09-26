@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "alittlebitofeverything:block/lonsdaleite_fragment_cube"
-  }
-}

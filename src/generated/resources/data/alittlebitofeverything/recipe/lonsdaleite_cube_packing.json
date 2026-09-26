@@ -3,7 +3,7 @@
   "category": "building",
   "group": "lonsdaleite",
   "key": {
-    "A": "alittlebitofeverything:lonsdaleite"
+    "A": "alittlebitofeverything:rose_spar"
   },
   "pattern": [
     "AAA",
@@ -11,6 +11,6 @@
     "AAA"
   ],
   "result": {
-    "id": "alittlebitofeverything:lonsdaleite_cube"
+    "id": "alittlebitofeverything:rose_spar_block"
   }
 }

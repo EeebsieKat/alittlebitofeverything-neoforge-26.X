@@ -18,18 +18,21 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(ALittleBitofEverything.MOD_ID);
 
-    public static final DeferredBlock<Block> LONSDALEITE_CUBE = registerBlock("lonsdaleite_cube",
-            properties -> new Block(properties.strength(4f)
+    public static final DeferredBlock<Block> ROSE_SPAR_BLOCK = registerBlock("rose_spar_block",
+            properties -> new Block(properties.strength(3f)
                     .requiresCorrectToolForDrops().sound(SoundType.IRON)));
-    public static final DeferredBlock<Block> LONSDALEITE_FRAGMENT_CUBE = registerBlock("lonsdaleite_fragment_cube",
+    public static final DeferredBlock<Block> ROSE_SPAR_SHARD_BLOCK = registerBlock("rose_spar_shard_block",
             properties -> new Block(properties.strength(2f)
                     .requiresCorrectToolForDrops().sound(SoundType.IRON)));
 
-    public static final DeferredBlock<Block> METEORITE_STONE = registerBlock("meteorite_stone",
+    public static final DeferredBlock<Block> SINTERED_BRECCIA = registerBlock("sintered_breccia",
+            properties -> new DropExperienceBlock(UniformInt.of(3, 7), properties.strength(5f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> ROSE_SPAR_STONE = registerBlock("rose_spar_stone",
             properties -> new DropExperienceBlock(UniformInt.of(3, 7), properties.strength(3f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
-        public static final DeferredBlock<Block> METEORITE_STRATA = registerBlock("meteorite_strata",
-            properties -> new DropExperienceBlock(UniformInt.of(5, 11), properties.strength(4f)
+        public static final DeferredBlock<Block> CHRONDITE_STRATA = registerBlock("chrondite_strata",
+            properties -> new DropExperienceBlock(UniformInt.of(5, 11), properties.strength(7f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> OLIVINE = registerBlock("olivine_block",

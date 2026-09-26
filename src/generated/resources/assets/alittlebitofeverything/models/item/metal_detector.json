@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "alittlebitofeverything:item/lonsdaleite"
+    "layer0": "alittlebitofeverything:item/metal_detector"
   }
 }

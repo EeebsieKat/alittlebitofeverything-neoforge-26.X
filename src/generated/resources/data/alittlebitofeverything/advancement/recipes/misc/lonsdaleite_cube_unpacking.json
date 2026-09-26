@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lonsdaleite_cube": {
+    "has_rose_spar_block": {
       "conditions": {
         "items": [
           {
-            "items": "alittlebitofeverything:lonsdaleite_cube"
+            "items": "alittlebitofeverything:rose_spar_block"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_lonsdaleite_cube"
+      "has_rose_spar_block"
     ]
   ],
   "rewards": {

@@ -1,6 +1,7 @@
 package net.eeebsiekat.bitsofeverything.block;
 
 import net.eeebsiekat.bitsofeverything.ALittleBitofEverything;
+import net.eeebsiekat.bitsofeverything.block.custom.FoodPrinterBlock;
 import net.eeebsiekat.bitsofeverything.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -26,13 +27,16 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops().sound(SoundType.IRON)));
 
     public static final DeferredBlock<Block> SINTERED_BRECCIA = registerBlock("sintered_breccia",
-            properties -> new DropExperienceBlock(UniformInt.of(3, 7), properties.strength(5f)
-                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+            properties -> new Block(properties.strength(5f)
+                    .requiresCorrectToolForDrops().sound(SoundType.IRON)));
+    public static final DeferredBlock<Block> BRECCIA = registerBlock("breccia",
+            properties -> new Block(properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
     public static final DeferredBlock<Block> ROSE_SPAR_STONE = registerBlock("rose_spar_stone",
-            properties -> new DropExperienceBlock(UniformInt.of(3, 7), properties.strength(3f)
+            properties -> new Block(properties.strength(3f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
-        public static final DeferredBlock<Block> CHRONDITE_STRATA = registerBlock("chrondite_strata",
-            properties -> new DropExperienceBlock(UniformInt.of(5, 11), properties.strength(7f)
+    public static final DeferredBlock<Block> CHRONDITE_STRATA = registerBlock("chrondite_strata",
+            properties -> new Block(properties.strength(7f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> OLIVINE = registerBlock("olivine_block",
@@ -41,6 +45,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> PIGEONITE = registerBlock("pigeonite_block",
             properties -> new Block(properties.strength(3f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> FOOD_PRINTER = registerBlock("food_printer",
+            properties -> new FoodPrinterBlock(properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.IRON)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function) {

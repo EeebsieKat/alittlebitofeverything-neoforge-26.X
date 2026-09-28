@@ -29,9 +29,11 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createTrivialCube(ModBlocks.ROSE_SPAR_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.ROSE_SPAR_SHARD_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.SINTERED_BRECCIA.get());
+        blockModels.createTrivialCube(ModBlocks.BRECCIA.get());
         blockModels.createTrivialCube(ModBlocks.ROSE_SPAR_STONE.get());
         blockModels.createTrivialCube(ModBlocks.CHRONDITE_STRATA.get());
         blockModels.createTrivialCube(ModBlocks.OLIVINE.get());
         blockModels.createTrivialCube(ModBlocks.PIGEONITE.get());
+        blockModels.createTrivialCube(ModBlocks.FOOD_PRINTER.get());
     }
 }

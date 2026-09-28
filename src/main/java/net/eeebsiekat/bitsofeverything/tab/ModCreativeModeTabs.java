@@ -39,11 +39,17 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.ROSE_SPAR_BLOCK);
                         output.accept(ModBlocks.ROSE_SPAR_SHARD_BLOCK);
+
                         output.accept(ModBlocks.CHRONDITE_STRATA);
                         output.accept(ModBlocks.SINTERED_BRECCIA);
+
+                        output.accept(ModBlocks.BRECCIA);
+
                         output.accept(ModBlocks.ROSE_SPAR_STONE);
                         output.accept(ModBlocks.OLIVINE);
                         output.accept(ModBlocks.PIGEONITE);
+
+                        output.accept(ModBlocks.FOOD_PRINTER);
                     })
 
                     .build());

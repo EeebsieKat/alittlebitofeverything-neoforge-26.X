@@ -31,6 +31,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.ROSE_SPAR_SHARD_BLOCK.get());
         dropSelf(ModBlocks.CHRONDITE_STRATA.get());
         dropSelf(ModBlocks.SINTERED_BRECCIA.get());
+        dropSelf(ModBlocks.BRECCIA.get());
 
         add(ModBlocks.OLIVINE.get(),
                 createMultipleOreDrops(ModBlocks.OLIVINE.get(), ModItems.RAW_OLIVINE.get(), 2, 5));
@@ -38,6 +39,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createMultipleOreDrops(ModBlocks.PIGEONITE.get(), ModItems.RAW_PIGEONITE.get(), 2, 5));
         add(ModBlocks.ROSE_SPAR_STONE.get(),
                 createMultipleOreDrops(ModBlocks.ROSE_SPAR_STONE.get(), ModItems.ROSE_SPAR_SHARD.get(), 4, 7));
+
+        dropSelf(ModBlocks.FOOD_PRINTER.get());
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minDrops, float maxDrops) {

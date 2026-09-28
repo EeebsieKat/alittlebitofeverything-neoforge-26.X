@@ -1,7 +1,8 @@
 {
   "values": [
-    "alittlebitofeverything:sintered_breccia",
     "alittlebitofeverything:olivine_block",
-    "alittlebitofeverything:pigeonite_block"
+    "alittlebitofeverything:pigeonite_block",
+    "alittlebitofeverything:rose_spar_stone",
+    "alittlebitofeverything:breccia"
   ]
 }

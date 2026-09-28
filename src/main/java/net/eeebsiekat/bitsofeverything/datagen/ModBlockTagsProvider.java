@@ -20,16 +20,21 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.ROSE_SPAR_BLOCK.get())
                 .add(ModBlocks.ROSE_SPAR_SHARD_BLOCK.get())
+                .add(ModBlocks.ROSE_SPAR_STONE.get())
                 .add(ModBlocks.SINTERED_BRECCIA.get())
+                .add(ModBlocks.BRECCIA.get())
                 .add(ModBlocks.CHRONDITE_STRATA.get())
                 .add(ModBlocks.OLIVINE.get())
-                .add(ModBlocks.PIGEONITE.get());
+                .add(ModBlocks.PIGEONITE.get())
+                .add(ModBlocks.FOOD_PRINTER.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.SINTERED_BRECCIA.get())
                 .add(ModBlocks.OLIVINE.get())
-                .add(ModBlocks.PIGEONITE.get());
+                .add(ModBlocks.PIGEONITE.get())
+                .add(ModBlocks.ROSE_SPAR_STONE.get())
+                .add(ModBlocks.BRECCIA.get());
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.SINTERED_BRECCIA.get())
                 .add(ModBlocks.ROSE_SPAR_BLOCK.get())
                 .add(ModBlocks.ROSE_SPAR_SHARD_BLOCK.get());
         tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)

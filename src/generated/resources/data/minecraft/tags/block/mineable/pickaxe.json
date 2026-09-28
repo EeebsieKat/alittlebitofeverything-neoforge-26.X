@@ -2,9 +2,12 @@
   "values": [
     "alittlebitofeverything:rose_spar_block",
     "alittlebitofeverything:rose_spar_shard_block",
+    "alittlebitofeverything:rose_spar_stone",
     "alittlebitofeverything:sintered_breccia",
+    "alittlebitofeverything:breccia",
     "alittlebitofeverything:chrondite_strata",
     "alittlebitofeverything:olivine_block",
-    "alittlebitofeverything:pigeonite_block"
+    "alittlebitofeverything:pigeonite_block",
+    "alittlebitofeverything:food_printer"
   ]
 }

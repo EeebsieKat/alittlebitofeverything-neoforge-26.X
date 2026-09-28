@@ -1,6 +1,6 @@
 {
-  "item.alittlebitofeverything.lonsdaleite": "Lonsdaleite",
-  "item.alittlebitofeverything.lonsdaleite_fragment": "Lonsdaleite Fragment",
+  "item.alittlebitofeverything.rose_spar": "Rose Spar",
+  "item.alittlebitofeverything.rose_spar_shard": "Rose Spar Shard",
   "item.alittlebitofeverything.raw_olivine": "Raw Olivine",
   "item.alittlebitofeverything.olivine": "Olivine",
   "item.alittlebitofeverything.raw_pigeonite": "Raw Pigeonite",
@@ -9,12 +9,15 @@
 
   "item.alittlebitofeverything.metal_detector.no_valueables": "No Valueables Found",
 
-  "block.alittlebitofeverything.lonsdaleite_cube": "Lonsdaleite Cube",
-  "block.alittlebitofeverything.lonsdaleite_fragment_cube": "Lonsdaleite Fragment Cube",
-  "block.alittlebitofeverything.meteorite_stone": "Meteorite Stone",
-  "block.alittlebitofeverything.meteorite_strata": "Meteorite Strata",
-  "block.alittlebitofeverything.olivine_block": "Olivine Block",
-  "block.alittlebitofeverything.pigeonite_block": "Pigeonite Block",
+  "block.alittlebitofeverything.rose_spar_stone": "Rose Spar Stone",
+  "block.alittlebitofeverything.rose_spar_block": "Rose Spar Block",
+  "block.alittlebitofeverything.rose_spar_shard_block": "Rose Spar Shard Block",
+  "block.alittlebitofeverything.sintered_breccia": "Sintered Breccia",
+  "block.alittlebitofeverything.breccia": "Breccia",
+  "block.alittlebitofeverything.chrondite_strata": "Chrondite Strata",
+  "block.alittlebitofeverything.olivine_block": "Olivine Rose Spar Ore",
+  "block.alittlebitofeverything.pigeonite_block": "Pigeonite Rose Spar Ore",
+  "block.alittlebitofeverything.food_printer": "Food Printer",
 
   "creativetab.alittlebitofeverything.everything_items": "A Little Bit of Items",
   "creativetab.alittlebitofeverything.everything_blocks": "A Little Bit of Blocks"

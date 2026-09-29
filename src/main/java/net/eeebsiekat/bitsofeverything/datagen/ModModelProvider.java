@@ -24,6 +24,8 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.RAW_PIGEONITE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.PIGEONITE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.METAL_DETECTOR.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.FROMAGE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.SINTERED_FROMAGE.get(), ModelTemplates.FLAT_ITEM);
 
         //Blocks
         blockModels.createTrivialCube(ModBlocks.ROSE_SPAR_BLOCK.get());

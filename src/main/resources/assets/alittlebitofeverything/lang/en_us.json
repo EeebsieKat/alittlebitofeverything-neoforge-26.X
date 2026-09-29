@@ -1,11 +1,16 @@
 {
   "item.alittlebitofeverything.rose_spar": "Rose Spar",
   "item.alittlebitofeverything.rose_spar_shard": "Rose Spar Shard",
+
   "item.alittlebitofeverything.raw_olivine": "Raw Olivine",
   "item.alittlebitofeverything.olivine": "Olivine",
   "item.alittlebitofeverything.raw_pigeonite": "Raw Pigeonite",
   "item.alittlebitofeverything.pigeonite": "Pigeonite",
+
   "item.alittlebitofeverything.metal_detector": "Metal Detector",
+
+  "item.alittlebitofeverything.fromage": "Cheese",
+  "item.alittlebitofeverything.sintered_fromage": "Sintered Cheese",
 
   "item.alittlebitofeverything.metal_detector.no_valueables": "No Valueables Found",
 

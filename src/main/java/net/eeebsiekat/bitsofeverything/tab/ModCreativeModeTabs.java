@@ -24,11 +24,16 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.ROSE_SPAR);
                         output.accept(ModItems.ROSE_SPAR_SHARD);
+
                         output.accept(ModItems.RAW_OLIVINE);
                         output.accept(ModItems.OLIVINE);
                         output.accept(ModItems.RAW_PIGEONITE);
                         output.accept(ModItems.PIGEONITE);
+
                         output.accept(ModItems.METAL_DETECTOR);
+
+                        output.accept(ModItems.FROMAGE);
+                        output.accept(ModItems.SINTERED_FROMAGE);
                     })
 
                     .build());

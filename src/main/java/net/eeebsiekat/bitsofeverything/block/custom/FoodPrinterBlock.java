@@ -32,9 +32,9 @@ public class FoodPrinterBlock extends Block {
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
 
-        level.addParticle(ParticleTypes.END_ROD, pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, 0, 1, 0);
+        level.addParticle(ParticleTypes.SOUL_FIRE_FLAME, pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, 0, 0.2, 0);
 
-        level.playSound(player, pos, SoundEvents.SCULK_SHRIEKER_SHRIEK, SoundSource.BLOCKS, 2f, 1f);
+        level.playSound(player, pos, SoundEvents.TRIAL_SPAWNER_DETECT_PLAYER, SoundSource.BLOCKS, 2f, 1f);
 
         return InteractionResult.SUCCESS;
     }
@@ -55,7 +55,7 @@ public class FoodPrinterBlock extends Block {
     }
 
     private boolean isValidItem(ItemStack item) {
-        return item.is(ModItems.ROSE_SPAR);
+        return item.is(ModItems.CARBON);
     }
 
     private Item getRandomItemFromTag(TagKey<Item> key) {

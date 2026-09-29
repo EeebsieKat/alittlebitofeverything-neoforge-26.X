@@ -26,6 +26,9 @@ public class ModItems {
     public static final DeferredItem<Item> SINTERED_FROMAGE = ITEMS.registerItem("sintered_fromage",
             properties -> new Item(properties.food(ModFoods.SINTERED_FROMAGE, ModFoods.SINTERED_FROMAGE_CONSUMABLE)));
 
+    public static final DeferredItem<Item> CARBON = ITEMS.registerItem("carbon",
+            properties -> new Item(properties.stacksTo(16)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

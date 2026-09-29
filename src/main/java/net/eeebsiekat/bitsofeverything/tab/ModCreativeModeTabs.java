@@ -34,6 +34,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.FROMAGE);
                         output.accept(ModItems.SINTERED_FROMAGE);
+
+                        output.accept(ModItems.CARBON);
                     })
 
                     .build());

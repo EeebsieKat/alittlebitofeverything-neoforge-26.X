@@ -1,9 +1,6 @@
 package net.eeebsiekat.bitsofeverything;
 
-import net.eeebsiekat.bitsofeverything.datagen.ModBlockLootTableProvider;
-import net.eeebsiekat.bitsofeverything.datagen.ModBlockTagsProvider;
-import net.eeebsiekat.bitsofeverything.datagen.ModModelProvider;
-import net.eeebsiekat.bitsofeverything.datagen.ModRecipeProvider;
+import net.eeebsiekat.bitsofeverything.datagen.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
@@ -28,6 +25,7 @@ public class ALittleBitOfDatagen {
         generator.addProvider(true, new LootTableProvider(packOutput, Collections.emptySet(),
                 List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
         generator.addProvider(true, new ModRecipeProvider.Runner(packOutput, lookupProvider));
+        generator.addProvider(true, new ModDataMapProvider(packOutput, lookupProvider));
     }
 
 }

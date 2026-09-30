@@ -31,6 +31,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.PIGEONITE);
 
                         output.accept(ModItems.METAL_DETECTOR);
+                        output.accept(ModItems.DATA_TABLET);
 
                         output.accept(ModItems.FROMAGE);
                         output.accept(ModItems.SINTERED_FROMAGE);

@@ -15,7 +15,7 @@
 
   "item.alittlebitofeverything.carbon": "§1Carbon",
 
-  "item.alittlebitofeverything.metal_detector.no_valueables": "No Valueables Found",
+  "item.alittlebitofeverything.metal_detector.no_valueables": "No Valuables Found",
 
   "block.alittlebitofeverything.rose_spar_stone": "Rose Spar Stone",
   "block.alittlebitofeverything.rose_spar_block": "Rose Spar Block",
@@ -31,5 +31,8 @@
   "creativetab.alittlebitofeverything.everything_blocks": "A Little Bit of Blocks",
 
   "tooltip.alittlebitofeverything.suspicious_fromage.tooltip": "§6Cheese§r... but weird",
-  "tooltip.alittlebitofeverything.food_printer.tooltip": "Toss §1§lCarbon§r on top and receive a random §6food item§r!"
+  "tooltip.alittlebitofeverything.food_printer.tooltip": "Toss §1§lCarbon§r on top and receive a random §6food item§r!",
+
+  "tooltip.alittlebitofeverything.metal_detector": "Press §6Shift§r fo more details",
+  "tooltip.alittlebitofeverything.metal_detector.shift_down": "Right click on a block. Checks §b64§r blocks down for vanilla metals. Takes durability §conly§r when a valuable is found."
 }

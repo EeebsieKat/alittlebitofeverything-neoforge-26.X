@@ -1,5 +1,6 @@
 package net.eeebsiekat.bitsofeverything.item.custom;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
@@ -10,11 +11,16 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+
+import java.util.function.Consumer;
 
 public class MetalDetectorItem extends Item {
     public MetalDetectorItem(Properties properties) {
@@ -83,5 +89,16 @@ public class MetalDetectorItem extends Item {
 
     private boolean isValueableBlock(BlockState blockState) {
         return blockState.is(Blocks.IRON_ORE) || blockState.is(Blocks.DEEPSLATE_IRON_ORE) || blockState.is(Blocks.GOLD_ORE) || blockState.is(Blocks.DEEPSLATE_GOLD_ORE);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+        if(Minecraft.getInstance().hasShiftDown()) {
+            builder.accept(Component.translatable("tooltip.alittlebitofeverything.metal_detector.shift_down"));
+        } else {
+            builder.accept(Component.translatable("tooltip.alittlebitofeverything.metal_detector"));
+        }
+
+        super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
     }
 }

@@ -30,20 +30,7 @@ public class FoodPrinterBlock extends Block {
     }
 
     @Override
-    protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
-
-        level.addParticle(ParticleTypes.SOUL_FIRE_FLAME, pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, 0, 0.2, 0);
-
-        level.playSound(player, pos, SoundEvents.TRIAL_SPAWNER_DETECT_PLAYER, SoundSource.BLOCKS, 2f, 1f);
-
-        return InteractionResult.SUCCESS;
-    }
-
-    @Override
     public void stepOn(Level level, BlockPos pos, BlockState onState, Entity entity) {
-        if(entity instanceof Player player) {
-            player.addEffect(new MobEffectInstance(MobEffects.HASTE, 300));
-        }
 
         if(entity instanceof ItemEntity itemEntity) {
             if(isValidItem(itemEntity.getItem())) {

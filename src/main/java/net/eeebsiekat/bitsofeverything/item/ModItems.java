@@ -3,10 +3,20 @@ package net.eeebsiekat.bitsofeverything.item;
 import net.eeebsiekat.bitsofeverything.ALittleBitofEverything;
 import net.eeebsiekat.bitsofeverything.food.ModFoods;
 import net.eeebsiekat.bitsofeverything.item.custom.MetalDetectorItem;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.component.SuspiciousStewEffects;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.function.Consumer;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ALittleBitofEverything.MOD_ID);
@@ -28,6 +38,18 @@ public class ModItems {
 
     public static final DeferredItem<Item> CARBON = ITEMS.registerItem("carbon",
             properties -> new Item(properties.stacksTo(16)));
+
+    public static final DeferredItem<Item> SUSPICIOUS_FROMAGE = ITEMS.registerItem("suspicious_fromage",
+            properties -> new Item(properties
+                    .stacksTo(1)
+                    .food(Foods.SUSPICIOUS_STEW, ModFoods.SUSPICIOUS_FROMAGE_CONSUMABLE)
+                    .component(DataComponents.SUSPICIOUS_STEW_EFFECTS, SuspiciousStewEffects.EMPTY)){
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder.accept(Component.translatable("tooltip.alittlebitofeverything.suspicious_fromage.tooltip"));
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

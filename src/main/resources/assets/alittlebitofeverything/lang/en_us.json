@@ -9,10 +9,11 @@
 
   "item.alittlebitofeverything.metal_detector": "Metal Detector",
 
-  "item.alittlebitofeverything.fromage": "Cheese",
-  "item.alittlebitofeverything.sintered_fromage": "Sintered Cheese",
+  "item.alittlebitofeverything.fromage": "§6Cheese",
+  "item.alittlebitofeverything.sintered_fromage": "§8Sintered Cheese",
+  "item.alittlebitofeverything.suspicious_fromage": "§2Suspicious Cheese",
 
-  "item.alittlebitofeverything.carbon": "Carbon",
+  "item.alittlebitofeverything.carbon": "§1Carbon",
 
   "item.alittlebitofeverything.metal_detector.no_valueables": "No Valueables Found",
 
@@ -27,5 +28,8 @@
   "block.alittlebitofeverything.food_printer": "Food Printer",
 
   "creativetab.alittlebitofeverything.everything_items": "A Little Bit of Items",
-  "creativetab.alittlebitofeverything.everything_blocks": "A Little Bit of Blocks"
+  "creativetab.alittlebitofeverything.everything_blocks": "A Little Bit of Blocks",
+
+  "tooltip.alittlebitofeverything.suspicious_fromage.tooltip": "§6Cheese§r... but weird",
+  "tooltip.alittlebitofeverything.food_printer.tooltip": "Toss §1§lCarbon§r on top and receive a random §6food item§r!"
 }

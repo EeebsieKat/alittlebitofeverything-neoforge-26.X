@@ -25,4 +25,7 @@ public class ModFoods {
             .consumeSeconds(0.5f)
             .onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HASTE, 100), 1.0f))
             .build();
+    public static final Consumable SUSPICIOUS_FROMAGE_CONSUMABLE = Consumables.defaultFood()
+            .consumeSeconds(0.5f)
+            .build();
 }

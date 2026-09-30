@@ -26,6 +26,7 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.METAL_DETECTOR.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.FROMAGE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.SINTERED_FROMAGE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.SUSPICIOUS_FROMAGE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.CARBON.get(), ModelTemplates.FLAT_ITEM);
 
         //Blocks

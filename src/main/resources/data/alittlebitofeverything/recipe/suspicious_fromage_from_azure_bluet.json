@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "cheese",
+  "ingredients": [
+    "alittlebitofeverything:fromage",
+    "minecraft:azure_bluet"
+  ],
+  "result": {
+    "components": {
+      "minecraft:suspicious_stew_effects": [
+        {
+          "duration": 220,
+          "id": "minecraft:blindness"
+        }
+      ]
+    },
+    "id": "alittlebitofeverything:suspicious_fromage"
+  }
+}

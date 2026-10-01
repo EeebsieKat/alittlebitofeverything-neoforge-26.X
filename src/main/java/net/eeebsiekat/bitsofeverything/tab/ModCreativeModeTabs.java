@@ -72,10 +72,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SINTERED_BRECCIA);
                         output.accept(ModBlocks.CHROMITE_SINTERED_BRECCIA_ORE);
                         output.accept(ModBlocks.POLISHED_SINTERED_BRECCIA);
+                        output.accept(ModBlocks.SINTERED_BRECCIA_STAIRS);
+                        output.accept(ModBlocks.SINTERED_BRECCIA_SLAB);
 
                         output.accept(ModBlocks.BRECCIA);
                         output.accept(ModBlocks.CHROMITE_BRECCIA_ORE);
                         output.accept(ModBlocks.POLISHED_BRECCIA);
+                        output.accept(ModBlocks.BRECCIA_STAIRS);
+                        output.accept(ModBlocks.BRECCIA_SLAB);
 
                         output.accept(ModBlocks.ROSE_SPAR_STONE);
                         output.accept(ModBlocks.OLIVINE_ROSE_SPAR_ORE);

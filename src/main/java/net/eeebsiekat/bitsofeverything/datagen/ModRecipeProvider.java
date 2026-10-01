@@ -186,6 +186,17 @@ public class ModRecipeProvider extends RecipeProvider {
         oreSmelting(OLIVINE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.OLIVINE.get(), 0.25f, 200, "olivine");
         oreBlasting(OLIVINE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.OLIVINE.get(), 0.25f, 100, "olivine");
 
+        stairBuilder(ModBlocks.BRECCIA_STAIRS.get(), Ingredient.of(ModBlocks.BRECCIA))
+                .unlockedBy(getHasName(ModBlocks.BRECCIA.get()), has(ModBlocks.BRECCIA))
+                .group("breccia")
+                .save(output);
+        slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BRECCIA_SLAB.get(), ModBlocks.BRECCIA.get());
+        stairBuilder(ModBlocks.SINTERED_BRECCIA_STAIRS.get(), Ingredient.of(ModBlocks.SINTERED_BRECCIA))
+                .unlockedBy(getHasName(ModBlocks.SINTERED_BRECCIA.get()), has(ModBlocks.SINTERED_BRECCIA))
+                .group("breccia")
+                .save(output);
+        slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SINTERED_BRECCIA_SLAB.get(), ModBlocks.SINTERED_BRECCIA.get());
+
     }
 
     @Override

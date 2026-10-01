@@ -1,7 +1,10 @@
 {
   "values": {
     "alittlebitofeverything:carbon": {
-      "burn_time": 7200
+      "burn_time": 6400
+    },
+    "alittlebitofeverything:carbon_block": {
+      "burn_time": 57600
     }
   }
 }

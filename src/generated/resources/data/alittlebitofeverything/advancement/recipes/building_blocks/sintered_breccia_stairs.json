@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sintered_breccia": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alittlebitofeverything:sintered_breccia"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alittlebitofeverything:sintered_breccia_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sintered_breccia"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alittlebitofeverything:sintered_breccia_stairs"
+    ]
+  }
+}

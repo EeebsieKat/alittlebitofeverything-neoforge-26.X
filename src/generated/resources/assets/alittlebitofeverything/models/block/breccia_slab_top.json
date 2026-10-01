@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "alittlebitofeverything:block/breccia",
+    "side": "alittlebitofeverything:block/breccia",
+    "top": "alittlebitofeverything:block/breccia"
+  }
+}

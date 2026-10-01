@@ -9,7 +9,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -89,6 +91,20 @@ public class ModBlocks {
     public static final DeferredBlock<Block> FOOD_PRINTER = registerBlock("food_printer",
             properties -> new FoodPrinterBlock(properties.strength(3f)
                     .requiresCorrectToolForDrops().sound(SoundType.IRON)), Component.translatable("tooltip.alittlebitofeverything.food_printer.tooltip"));
+
+    public static final DeferredBlock<Block> SINTERED_BRECCIA_STAIRS = registerBlock("sintered_breccia_stairs",
+            properties -> new StairBlock(ModBlocks.SINTERED_BRECCIA.get().defaultBlockState(), properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> SINTERED_BRECCIA_SLAB = registerBlock("sintered_breccia_slab",
+            properties -> new SlabBlock(properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> BRECCIA_STAIRS = registerBlock("breccia_stairs",
+            properties -> new StairBlock(ModBlocks.BRECCIA.get().defaultBlockState(), properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> BRECCIA_SLAB = registerBlock("breccia_slab",
+            properties -> new SlabBlock(properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function, Component... components) {

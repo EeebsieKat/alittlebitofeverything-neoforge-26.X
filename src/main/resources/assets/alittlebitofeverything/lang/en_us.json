@@ -1,6 +1,12 @@
 {
   "item.alittlebitofeverything.rose_spar": "Rose Spar",
   "item.alittlebitofeverything.rose_spar_shard": "Rose Spar Shard",
+  "item.alittlebitofeverything.teal_spar": "Teal Spar",
+  "item.alittlebitofeverything.teal_spar_shard": "Teal Spar Shard",
+  "item.alittlebitofeverything.fromage_spar": "Fromage Spar",
+  "item.alittlebitofeverything.fromage_spar_shard": "Fromage Spar Shard",
+  "item.alittlebitofeverything.chromite": "Chromite",
+  "item.alittlebitofeverything.chromite_shard": "Chromite Shard",
 
   "item.alittlebitofeverything.raw_olivine": "Raw Olivine",
   "item.alittlebitofeverything.olivine": "Olivine",
@@ -8,30 +14,47 @@
   "item.alittlebitofeverything.pigeonite": "Pigeonite",
 
   "item.alittlebitofeverything.metal_detector": "Metal Detector",
+  "item.alittlebitofeverything.datapad": "Datapad",
 
-  "item.alittlebitofeverything.fromage": "§6Cheese",
-  "item.alittlebitofeverything.sintered_fromage": "§8Sintered Cheese",
-  "item.alittlebitofeverything.suspicious_fromage": "§2Suspicious Cheese",
+  "item.alittlebitofeverything.fromage": "Cheese",
+  "item.alittlebitofeverything.sintered_fromage": "Sintered Cheese",
+  "item.alittlebitofeverything.suspicious_fromage": "Suspicious Cheese",
 
-  "item.alittlebitofeverything.carbon": "§1Carbon",
+  "item.alittlebitofeverything.carbon": "Carbon",
 
   "item.alittlebitofeverything.metal_detector.no_valueables": "No Valuables Found",
 
   "block.alittlebitofeverything.rose_spar_stone": "Rose Spar Stone",
   "block.alittlebitofeverything.rose_spar_block": "Rose Spar Block",
   "block.alittlebitofeverything.rose_spar_shard_block": "Rose Spar Shard Block",
+  "block.alittlebitofeverything.teal_spar_block": "Teal Spar Block",
+  "block.alittlebitofeverything.teal_spar_shard_block": "Teal Spar Shard Block",
+  "block.alittlebitofeverything.fromage_spar_block": "Fromage Spar Block",
+  "block.alittlebitofeverything.fromage_spar_shard_block": "Fromage Spar Shard Block",
   "block.alittlebitofeverything.sintered_breccia": "Sintered Breccia",
   "block.alittlebitofeverything.breccia": "Breccia",
-  "block.alittlebitofeverything.chrondite_strata": "Chrondite Strata",
-  "block.alittlebitofeverything.olivine_block": "Olivine Rose Spar Ore",
-  "block.alittlebitofeverything.pigeonite_block": "Pigeonite Rose Spar Ore",
+  "block.alittlebitofeverything.polished_sintered_breccia": "Polished Sintered Breccia",
+  "block.alittlebitofeverything.polished_breccia": "Polished Breccia",
+  "block.alittlebitofeverything.chromite_sintered_breccia_ore": "Chromite Sintered Breccia Ore",
+  "block.alittlebitofeverything.chromite_breccia_ore": "Chromite Breccia Ore",
+  "block.alittlebitofeverything.chromite_rose_spar_ore": "Chromite Rose Spar Ore",
+  "block.alittlebitofeverything.olivine_rose_spar_ore": "Olivine Rose Spar Ore",
+  "block.alittlebitofeverything.pigeonite_rose_spar_ore": "Pigeonite Rose Spar Ore",
+  "block.alittlebitofeverything.carbon_block": "Carbon Block",
+  "block.alittlebitofeverything.carbon_sintered_breccia_ore": "Carbon Sintered Breccia Ore",
+  "block.alittlebitofeverything.carbon_breccia_ore": "Carbon Breccia Ore",
   "block.alittlebitofeverything.food_printer": "Food Printer",
+
+  "block.alittlebitofeverything.breccia_stairs": "Breccia Stairs",
+  "block.alittlebitofeverything.breccia_slab": "Breccia Slab",
+  "block.alittlebitofeverything.sintered_breccia_stairs": "Sintered Breccia Stairs",
+  "block.alittlebitofeverything.sintered_breccia_slab": "Sintered Breccia Slab",
 
   "creativetab.alittlebitofeverything.everything_items": "A Little Bit of Items",
   "creativetab.alittlebitofeverything.everything_blocks": "A Little Bit of Blocks",
 
-  "tooltip.alittlebitofeverything.suspicious_fromage.tooltip": "§6Cheese§r... but weird",
-  "tooltip.alittlebitofeverything.food_printer.tooltip": "Toss §1§lCarbon§r on top and receive a random §6food item§r!",
+  "tooltip.alittlebitofeverything.suspicious_fromage.tooltip": "Cheese... but weird",
+  "tooltip.alittlebitofeverything.food_printer.tooltip": "Toss Carbon on top and receive a random §6food item§r!",
 
   "tooltip.alittlebitofeverything.metal_detector": "Press §6Shift§r fo more details",
   "tooltip.alittlebitofeverything.metal_detector.shift_down": "Right click on a block. Checks §b64§r blocks down for vanilla metals. Takes durability §conly§r when a valuable is found."

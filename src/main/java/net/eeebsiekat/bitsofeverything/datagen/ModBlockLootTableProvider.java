@@ -43,6 +43,11 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.BRECCIA.get());
         dropSelf(ModBlocks.POLISHED_SINTERED_BRECCIA.get());
         dropSelf(ModBlocks.POLISHED_BRECCIA.get());
+        dropSelf(ModBlocks.BRECCIA_STAIRS.get());
+        dropSelf(ModBlocks.SINTERED_BRECCIA_STAIRS.get());
+
+        add(ModBlocks.BRECCIA_SLAB.get(), this::createSlabItemTable);
+        add(ModBlocks.SINTERED_BRECCIA_SLAB.get(), this::createSlabItemTable);
 
         add(ModBlocks.OLIVINE_ROSE_SPAR_ORE.get(),
                 createMultipleOreDrops(ModBlocks.OLIVINE_ROSE_SPAR_ORE.get(),

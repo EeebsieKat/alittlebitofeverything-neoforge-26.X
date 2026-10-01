@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "alittlebitofeverything:block/sintered_breccia_slab"
+    },
+    "type=double": {
+      "model": "alittlebitofeverything:block/sintered_breccia"
+    },
+    "type=top": {
+      "model": "alittlebitofeverything:block/sintered_breccia_slab_top"
+    }
+  }
+}

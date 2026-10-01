@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "alittlebitofeverything:block/breccia_slab"
+    },
+    "type=double": {
+      "model": "alittlebitofeverything:block/breccia"
+    },
+    "type=top": {
+      "model": "alittlebitofeverything:block/breccia_slab_top"
+    }
+  }
+}

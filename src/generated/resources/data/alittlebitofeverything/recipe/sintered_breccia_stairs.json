@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "breccia",
+  "key": {
+    "#": "alittlebitofeverything:sintered_breccia"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "alittlebitofeverything:sintered_breccia_stairs"
+  }
+}

@@ -46,8 +46,8 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createTrivialCube(ModBlocks.CARBON_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.CARBON_BRECCIA_ORE.get());
         blockModels.createTrivialCube(ModBlocks.CARBON_SINTERED_BRECCIA_ORE.get());
-        blockModels.createTrivialCube(ModBlocks.SINTERED_BRECCIA.get());
-        blockModels.createTrivialCube(ModBlocks.BRECCIA.get());
+        // blockModels.createTrivialCube(ModBlocks.SINTERED_BRECCIA.get());
+        // blockModels.createTrivialCube(ModBlocks.BRECCIA.get());
         blockModels.createTrivialCube(ModBlocks.POLISHED_SINTERED_BRECCIA.get());
         blockModels.createTrivialCube(ModBlocks.POLISHED_BRECCIA.get());
         blockModels.createTrivialCube(ModBlocks.ROSE_SPAR_STONE.get());
@@ -57,5 +57,13 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createTrivialCube(ModBlocks.OLIVINE_ROSE_SPAR_ORE.get());
         blockModels.createTrivialCube(ModBlocks.PIGEONITE_ROSE_SPAR_ORE.get());
         blockModels.createTrivialCube(ModBlocks.FOOD_PRINTER.get());
+
+        blockModels.family(ModBlocks.BRECCIA.get())
+                .stairs(ModBlocks.BRECCIA_STAIRS.get())
+                .slab(ModBlocks.BRECCIA_SLAB.get());
+
+        blockModels.family(ModBlocks.SINTERED_BRECCIA.get())
+                .stairs(ModBlocks.SINTERED_BRECCIA_STAIRS.get())
+                .slab(ModBlocks.SINTERED_BRECCIA_SLAB.get());
     }
 }

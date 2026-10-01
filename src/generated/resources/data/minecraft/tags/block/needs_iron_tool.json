@@ -5,8 +5,10 @@
     "alittlebitofeverything:chromite_rose_spar_ore",
     "alittlebitofeverything:rose_spar_stone",
     "alittlebitofeverything:breccia",
+    "alittlebitofeverything:breccia_stairs",
+    "alittlebitofeverything:breccia_slab",
     "alittlebitofeverything:carbon_breccia_ore",
     "alittlebitofeverything:carbon_block",
-    "alittlebitofeverything:chromite_sintered_breccia_ore"
+    "alittlebitofeverything:chromite_breccia_ore"
   ]
 }

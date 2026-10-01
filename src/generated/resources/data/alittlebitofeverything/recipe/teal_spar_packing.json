@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "teal_spar",
+  "key": {
+    "A": "alittlebitofeverything:teal_spar_shard"
+  },
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "id": "alittlebitofeverything:teal_spar"
+  }
+}

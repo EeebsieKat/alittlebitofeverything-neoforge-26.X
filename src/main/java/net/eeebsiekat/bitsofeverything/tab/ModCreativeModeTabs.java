@@ -25,13 +25,23 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ROSE_SPAR);
                         output.accept(ModItems.ROSE_SPAR_SHARD);
 
+                        output.accept(ModItems.TEAL_SPAR);
+                        output.accept(ModItems.TEAL_SPAR_SHARD);
+
+                        output.accept(ModItems.FROMAGE_SPAR);
+                        output.accept(ModItems.FROMAGE_SPAR_SHARD);
+
+                        output.accept(ModItems.CHROMITE);
+                        output.accept(ModItems.CHROMITE_SHARD);
+
                         output.accept(ModItems.RAW_OLIVINE);
                         output.accept(ModItems.OLIVINE);
+
                         output.accept(ModItems.RAW_PIGEONITE);
                         output.accept(ModItems.PIGEONITE);
 
                         output.accept(ModItems.METAL_DETECTOR);
-                        output.accept(ModItems.DATA_TABLET);
+                        output.accept(ModItems.DATAPAD);
 
                         output.accept(ModItems.FROMAGE);
                         output.accept(ModItems.SINTERED_FROMAGE);
@@ -49,14 +59,28 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ROSE_SPAR_BLOCK);
                         output.accept(ModBlocks.ROSE_SPAR_SHARD_BLOCK);
 
-                        output.accept(ModBlocks.CHRONDITE_STRATA);
+                        output.accept(ModBlocks.TEAL_SPAR_BLOCK);
+                        output.accept(ModBlocks.TEAL_SPAR_SHARD_BLOCK);
+
+                        output.accept(ModBlocks.FROMAGE_SPAR_BLOCK);
+                        output.accept(ModBlocks.FROMAGE_SPAR_SHARD_BLOCK);
+
+                        output.accept(ModBlocks.CARBON_BLOCK);
+                        output.accept(ModBlocks.CARBON_BRECCIA_ORE);
+                        output.accept(ModBlocks.CARBON_SINTERED_BRECCIA_ORE);
+
                         output.accept(ModBlocks.SINTERED_BRECCIA);
+                        output.accept(ModBlocks.CHROMITE_SINTERED_BRECCIA_ORE);
+                        output.accept(ModBlocks.POLISHED_SINTERED_BRECCIA);
 
                         output.accept(ModBlocks.BRECCIA);
+                        output.accept(ModBlocks.CHROMITE_BRECCIA_ORE);
+                        output.accept(ModBlocks.POLISHED_BRECCIA);
 
                         output.accept(ModBlocks.ROSE_SPAR_STONE);
-                        output.accept(ModBlocks.OLIVINE);
-                        output.accept(ModBlocks.PIGEONITE);
+                        output.accept(ModBlocks.OLIVINE_ROSE_SPAR_ORE);
+                        output.accept(ModBlocks.PIGEONITE_ROSE_SPAR_ORE);
+                        output.accept(ModBlocks.CHROMITE_ROSE_SPAR_ORE);
 
                         output.accept(ModBlocks.FOOD_PRINTER);
                     })

@@ -1,7 +1,13 @@
 {
   "values": [
     "alittlebitofeverything:sintered_breccia",
+    "alittlebitofeverything:carbon_sintered_breccia_ore",
+    "alittlebitofeverything:chromite_breccia_ore",
     "alittlebitofeverything:rose_spar_block",
-    "alittlebitofeverything:rose_spar_shard_block"
+    "alittlebitofeverything:rose_spar_shard_block",
+    "alittlebitofeverything:teal_spar_block",
+    "alittlebitofeverything:teal_spar_shard_block",
+    "alittlebitofeverything:fromage_spar_block",
+    "alittlebitofeverything:fromage_spar_shard_block"
   ]
 }

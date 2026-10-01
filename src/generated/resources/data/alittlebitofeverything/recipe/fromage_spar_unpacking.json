@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "fromage_spar",
+  "ingredients": [
+    "alittlebitofeverything:fromage_spar"
+  ],
+  "result": {
+    "count": 4,
+    "id": "alittlebitofeverything:fromage_spar_shard"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "fromage_spar",
+  "key": {
+    "A": "alittlebitofeverything:fromage_spar_shard"
+  },
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "id": "alittlebitofeverything:fromage_spar"
+  }
+}

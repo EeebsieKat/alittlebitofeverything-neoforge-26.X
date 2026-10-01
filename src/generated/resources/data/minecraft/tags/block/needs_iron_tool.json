@@ -1,8 +1,12 @@
 {
   "values": [
-    "alittlebitofeverything:olivine_block",
-    "alittlebitofeverything:pigeonite_block",
+    "alittlebitofeverything:olivine_rose_spar_ore",
+    "alittlebitofeverything:pigeonite_rose_spar_ore",
+    "alittlebitofeverything:chromite_rose_spar_ore",
     "alittlebitofeverything:rose_spar_stone",
-    "alittlebitofeverything:breccia"
+    "alittlebitofeverything:breccia",
+    "alittlebitofeverything:carbon_breccia_ore",
+    "alittlebitofeverything:carbon_block",
+    "alittlebitofeverything:chromite_sintered_breccia_ore"
   ]
 }

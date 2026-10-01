@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "teal_spar",
+  "ingredients": [
+    "alittlebitofeverything:teal_spar"
+  ],
+  "result": {
+    "count": 4,
+    "id": "alittlebitofeverything:teal_spar_shard"
+  }
+}

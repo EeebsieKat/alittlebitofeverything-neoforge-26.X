@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "rose_spar",
+  "ingredients": [
+    "alittlebitofeverything:rose_spar_shard_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "alittlebitofeverything:rose_spar_shard"
+  }
+}

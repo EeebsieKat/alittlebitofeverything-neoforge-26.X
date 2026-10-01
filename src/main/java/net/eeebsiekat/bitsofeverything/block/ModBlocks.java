@@ -4,13 +4,11 @@ import net.eeebsiekat.bitsofeverything.ALittleBitofEverything;
 import net.eeebsiekat.bitsofeverything.block.custom.FoodPrinterBlock;
 import net.eeebsiekat.bitsofeverything.item.ModItems;
 import net.minecraft.network.chat.Component;
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -26,30 +24,67 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> ROSE_SPAR_BLOCK = registerBlock("rose_spar_block",
             properties -> new Block(properties.strength(3f)
-                    .requiresCorrectToolForDrops().sound(SoundType.IRON)));
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
     public static final DeferredBlock<Block> ROSE_SPAR_SHARD_BLOCK = registerBlock("rose_spar_shard_block",
             properties -> new Block(properties.strength(2f)
-                    .requiresCorrectToolForDrops().sound(SoundType.IRON)));
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> TEAL_SPAR_BLOCK = registerBlock("teal_spar_block",
+            properties -> new Block(properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<Block> TEAL_SPAR_SHARD_BLOCK = registerBlock("teal_spar_shard_block",
+            properties -> new Block(properties.strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> FROMAGE_SPAR_BLOCK = registerBlock("fromage_spar_block",
+            properties -> new Block(properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<Block> FROMAGE_SPAR_SHARD_BLOCK = registerBlock("fromage_spar_shard_block",
+            properties -> new Block(properties.strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> CARBON_BLOCK = registerBlock("carbon_block",
+            properties -> new Block(properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> CARBON_BRECCIA_ORE = registerBlock("carbon_breccia_ore",
+            properties -> new Block(properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> CARBON_SINTERED_BRECCIA_ORE = registerBlock("carbon_sintered_breccia_ore",
+            properties -> new Block(properties.strength(5f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
     public static final DeferredBlock<Block> SINTERED_BRECCIA = registerBlock("sintered_breccia",
             properties -> new Block(properties.strength(5f)
-                    .requiresCorrectToolForDrops().sound(SoundType.IRON)));
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
     public static final DeferredBlock<Block> BRECCIA = registerBlock("breccia",
             properties -> new Block(properties.strength(3f)
                     .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
     public static final DeferredBlock<Block> ROSE_SPAR_STONE = registerBlock("rose_spar_stone",
             properties -> new Block(properties.strength(3f)
-                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final DeferredBlock<Block> CHRONDITE_STRATA = registerBlock("chrondite_strata",
-            properties -> new Block(properties.strength(7f)
-                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<Block> CHROMITE_BRECCIA_ORE = registerBlock("chromite_breccia_ore",
+            properties -> new Block(properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> CHROMITE_SINTERED_BRECCIA_ORE = registerBlock("chromite_sintered_breccia_ore",
+            properties -> new Block(properties.strength(5f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> CHROMITE_ROSE_SPAR_ORE = registerBlock("chromite_rose_spar_ore",
+            properties -> new Block(properties.strength(5f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
-    public static final DeferredBlock<Block> OLIVINE = registerBlock("olivine_block",
+    public static final DeferredBlock<Block> POLISHED_SINTERED_BRECCIA = registerBlock("polished_sintered_breccia",
+            properties -> new Block(properties.strength(5f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> POLISHED_BRECCIA = registerBlock("polished_breccia",
             properties -> new Block(properties.strength(3f)
-                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final DeferredBlock<Block> PIGEONITE = registerBlock("pigeonite_block",
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> OLIVINE_ROSE_SPAR_ORE = registerBlock("olivine_rose_spar_ore",
             properties -> new Block(properties.strength(3f)
-                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<Block> PIGEONITE_ROSE_SPAR_ORE = registerBlock("pigeonite_rose_spar_ore",
+            properties -> new Block(properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
     public static final DeferredBlock<Block> FOOD_PRINTER = registerBlock("food_printer",
             properties -> new FoodPrinterBlock(properties.strength(3f)

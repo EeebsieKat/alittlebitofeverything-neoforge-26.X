@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "teal_spar",
+  "key": {
+    "A": "alittlebitofeverything:teal_spar"
+  },
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "id": "alittlebitofeverything:teal_spar_block"
+  }
+}

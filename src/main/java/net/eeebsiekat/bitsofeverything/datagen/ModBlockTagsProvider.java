@@ -2,6 +2,7 @@ package net.eeebsiekat.bitsofeverything.datagen;
 
 import net.eeebsiekat.bitsofeverything.ALittleBitofEverything;
 import net.eeebsiekat.bitsofeverything.block.ModBlocks;
+import net.eeebsiekat.bitsofeverything.tags.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -20,24 +21,53 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.ROSE_SPAR_BLOCK.get())
                 .add(ModBlocks.ROSE_SPAR_SHARD_BLOCK.get())
+                .add(ModBlocks.TEAL_SPAR_BLOCK.get())
+                .add(ModBlocks.TEAL_SPAR_SHARD_BLOCK.get())
+                .add(ModBlocks.FROMAGE_SPAR_BLOCK.get())
+                .add(ModBlocks.FROMAGE_SPAR_SHARD_BLOCK.get())
+                .add(ModBlocks.CARBON_BLOCK.get())
+                .add(ModBlocks.CARBON_BRECCIA_ORE.get())
+                .add(ModBlocks.CARBON_SINTERED_BRECCIA_ORE.get())
                 .add(ModBlocks.ROSE_SPAR_STONE.get())
                 .add(ModBlocks.SINTERED_BRECCIA.get())
                 .add(ModBlocks.BRECCIA.get())
-                .add(ModBlocks.CHRONDITE_STRATA.get())
-                .add(ModBlocks.OLIVINE.get())
-                .add(ModBlocks.PIGEONITE.get())
+                .add(ModBlocks.POLISHED_SINTERED_BRECCIA.get())
+                .add(ModBlocks.POLISHED_BRECCIA.get())
+                .add(ModBlocks.CHROMITE_BRECCIA_ORE.get())
+                .add(ModBlocks.CHROMITE_SINTERED_BRECCIA_ORE.get())
+                .add(ModBlocks.CHROMITE_ROSE_SPAR_ORE.get())
+                .add(ModBlocks.OLIVINE_ROSE_SPAR_ORE.get())
+                .add(ModBlocks.PIGEONITE_ROSE_SPAR_ORE.get())
                 .add(ModBlocks.FOOD_PRINTER.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.OLIVINE.get())
-                .add(ModBlocks.PIGEONITE.get())
+                .add(ModBlocks.OLIVINE_ROSE_SPAR_ORE.get())
+                .add(ModBlocks.PIGEONITE_ROSE_SPAR_ORE.get())
+                .add(ModBlocks.CHROMITE_ROSE_SPAR_ORE.get())
                 .add(ModBlocks.ROSE_SPAR_STONE.get())
-                .add(ModBlocks.BRECCIA.get());
+                .add(ModBlocks.BRECCIA.get())
+                .add(ModBlocks.CARBON_BRECCIA_ORE.get())
+                .add(ModBlocks.CARBON_BLOCK.get())
+                .add(ModBlocks.CHROMITE_SINTERED_BRECCIA_ORE.get());
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.SINTERED_BRECCIA.get())
+                .add(ModBlocks.CARBON_SINTERED_BRECCIA_ORE.get())
+                .add(ModBlocks.CHROMITE_BRECCIA_ORE.get())
                 .add(ModBlocks.ROSE_SPAR_BLOCK.get())
-                .add(ModBlocks.ROSE_SPAR_SHARD_BLOCK.get());
-        tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
-                .add(ModBlocks.CHRONDITE_STRATA.get());
+                .add(ModBlocks.ROSE_SPAR_SHARD_BLOCK.get())
+                .add(ModBlocks.TEAL_SPAR_BLOCK.get())
+                .add(ModBlocks.TEAL_SPAR_SHARD_BLOCK.get())
+                .add(ModBlocks.FROMAGE_SPAR_BLOCK.get())
+                .add(ModBlocks.FROMAGE_SPAR_SHARD_BLOCK.get());
+        tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
+
+        tag(ModTags.Blocks.METAL_DETECTABLES)
+                .addTag(Tags.Blocks.ORES)
+                .add(ModBlocks.OLIVINE_ROSE_SPAR_ORE.get())
+                .add(ModBlocks.PIGEONITE_ROSE_SPAR_ORE.get())
+                .add(ModBlocks.CHROMITE_BRECCIA_ORE.get())
+                .add(ModBlocks.CHROMITE_SINTERED_BRECCIA_ORE.get())
+                .add(ModBlocks.CHROMITE_ROSE_SPAR_ORE.get());
+
     }
 }

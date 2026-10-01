@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rose_spar": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alittlebitofeverything:rose_spar"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alittlebitofeverything:rose_spar_block_packing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rose_spar"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alittlebitofeverything:rose_spar_block_packing"
+    ]
+  }
+}

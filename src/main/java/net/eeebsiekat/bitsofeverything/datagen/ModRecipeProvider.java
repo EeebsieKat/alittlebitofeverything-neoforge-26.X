@@ -3,20 +3,12 @@ package net.eeebsiekat.bitsofeverything.datagen;
 import net.eeebsiekat.bitsofeverything.ALittleBitofEverything;
 import net.eeebsiekat.bitsofeverything.block.ModBlocks;
 import net.eeebsiekat.bitsofeverything.item.ModItems;
-import net.minecraft.core.HolderGetter;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.core.component.DataComponents;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
-import net.minecraft.world.effect.MobEffect;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.component.SuspiciousStewEffects;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -48,34 +40,35 @@ public class ModRecipeProvider extends RecipeProvider {
 
     @Override
     protected void buildRecipes() {
+        // ROSE SPAR
         shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ROSE_SPAR_BLOCK.get())
                 .pattern("AAA")
                 .pattern("AAA")
                 .pattern("AAA")
                 .define('A', ModItems.ROSE_SPAR.get())
                 .unlockedBy(getHasName(ModItems.ROSE_SPAR.get()), has(ModItems.ROSE_SPAR))
-                .group("lonsdaleite")
-                .save(output, "alittlebitofeverything:lonsdaleite_cube_packing");
+                .group("rose_spar")
+                .save(output, "alittlebitofeverything:rose_spar_block_packing");
 
         shapeless(RecipeCategory.MISC, ModItems.ROSE_SPAR.get(), 9)
                 .requires(ModBlocks.ROSE_SPAR_BLOCK)
                 .unlockedBy(getHasName(ModBlocks.ROSE_SPAR_BLOCK.get()), has(ModBlocks.ROSE_SPAR_BLOCK))
-                .group("lonsdaleite")
-                .save(output, "alittlebitofeverything:lonsdaleite_cube_unpacking");
+                .group("rose_spar")
+                .save(output, "alittlebitofeverything:rose_spar_block_unpacking");
 
         shaped(RecipeCategory.MISC, ModItems.ROSE_SPAR.get())
                 .pattern("AA")
                 .pattern("AA")
                 .define('A', ModItems.ROSE_SPAR_SHARD.get())
                 .unlockedBy(getHasName(ModItems.ROSE_SPAR_SHARD.get()), has(ModItems.ROSE_SPAR_SHARD))
-                .group("lonsdaleite")
-                .save(output, "alittlebitofeverything:lonsdaleite_packing");
+                .group("rose_spar")
+                .save(output, "alittlebitofeverything:rose_spar_packing");
 
         shapeless(RecipeCategory.MISC, ModItems.ROSE_SPAR_SHARD.get(), 4)
                 .requires(ModItems.ROSE_SPAR)
                 .unlockedBy(getHasName(ModItems.ROSE_SPAR.get()), has(ModItems.ROSE_SPAR))
-                .group("lonsdaleite")
-                .save(output, "alittlebitofeverything:lonsdaleite_unpacking");
+                .group("rose_spar")
+                .save(output, "alittlebitofeverything:rose_spar_unpacking");
 
         shaped(RecipeCategory.MISC, ModBlocks.ROSE_SPAR_SHARD_BLOCK.get())
                 .pattern("AAA")
@@ -83,24 +76,112 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("AAA")
                 .define('A', ModItems.ROSE_SPAR_SHARD.get())
                 .unlockedBy(getHasName(ModItems.ROSE_SPAR_SHARD.get()), has(ModItems.ROSE_SPAR_SHARD))
-                .group("lonsdaleite")
-                .save(output, "alittlebitofeverything:lonsdaleite_fragment_cube_packing");
+                .group("rose_spar")
+                .save(output, "alittlebitofeverything:rose_spar_shard_block_packing");
 
         shapeless(RecipeCategory.MISC, ModItems.ROSE_SPAR_SHARD.get(), 9)
                 .requires(ModBlocks.ROSE_SPAR_SHARD_BLOCK)
                 .unlockedBy(getHasName(ModItems.ROSE_SPAR.get()), has(ModItems.ROSE_SPAR))
-                .group("lonsdaleite")
-                .save(output, "alittlebitofeverything:lonsdaleite_fragment_cube_unpacking");
+                .group("rose_spar")
+                .save(output, "alittlebitofeverything:rose_spar_shard_block_unpacking");
+
+        // TEAL SPAR
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TEAL_SPAR_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.TEAL_SPAR.get())
+                .unlockedBy(getHasName(ModItems.TEAL_SPAR.get()), has(ModItems.TEAL_SPAR))
+                .group("teal_spar")
+                .save(output, "alittlebitofeverything:teal_spar_block_packing");
+
+        shapeless(RecipeCategory.MISC, ModItems.TEAL_SPAR.get(), 9)
+                .requires(ModBlocks.TEAL_SPAR_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.TEAL_SPAR_BLOCK.get()), has(ModBlocks.TEAL_SPAR_BLOCK))
+                .group("teal_spar")
+                .save(output, "alittlebitofeverything:teal_spar_block_unpacking");
+
+        shaped(RecipeCategory.MISC, ModItems.TEAL_SPAR.get())
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', ModItems.TEAL_SPAR_SHARD.get())
+                .unlockedBy(getHasName(ModItems.TEAL_SPAR_SHARD.get()), has(ModItems.TEAL_SPAR_SHARD))
+                .group("teal_spar")
+                .save(output, "alittlebitofeverything:teal_spar_packing");
+
+        shapeless(RecipeCategory.MISC, ModItems.TEAL_SPAR_SHARD.get(), 4)
+                .requires(ModItems.TEAL_SPAR)
+                .unlockedBy(getHasName(ModItems.TEAL_SPAR.get()), has(ModItems.TEAL_SPAR))
+                .group("teal_spar")
+                .save(output, "alittlebitofeverything:teal_spar_unpacking");
+
+        shaped(RecipeCategory.MISC, ModBlocks.TEAL_SPAR_SHARD_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.TEAL_SPAR_SHARD.get())
+                .unlockedBy(getHasName(ModItems.TEAL_SPAR_SHARD.get()), has(ModItems.TEAL_SPAR_SHARD))
+                .group("teal_spar")
+                .save(output, "alittlebitofeverything:teal_spar_shard_block_packing");
+
+        shapeless(RecipeCategory.MISC, ModItems.TEAL_SPAR_SHARD.get(), 9)
+                .requires(ModBlocks.TEAL_SPAR_SHARD_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.TEAL_SPAR_SHARD_BLOCK.get()), has(ModBlocks.TEAL_SPAR_SHARD_BLOCK))
+                .group("teal_spar")
+                .save(output, "alittlebitofeverything:teal_spar_shard_block_unpacking");
+
+        // FROMAGE SPAR
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROMAGE_SPAR_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.FROMAGE_SPAR.get())
+                .unlockedBy(getHasName(ModItems.FROMAGE_SPAR.get()), has(ModItems.FROMAGE_SPAR))
+                .group("fromage_spar")
+                .save(output, "alittlebitofeverything:fromage_spar_block_packing");
+
+        shapeless(RecipeCategory.MISC, ModItems.FROMAGE_SPAR.get(), 9)
+                .requires(ModBlocks.FROMAGE_SPAR_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.FROMAGE_SPAR_BLOCK.get()), has(ModBlocks.FROMAGE_SPAR_BLOCK))
+                .group("fromage_spar")
+                .save(output, "alittlebitofeverything:fromage_spar_block_unpacking");
+
+        shaped(RecipeCategory.MISC, ModItems.FROMAGE_SPAR.get())
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', ModItems.FROMAGE_SPAR_SHARD.get())
+                .unlockedBy(getHasName(ModItems.FROMAGE_SPAR_SHARD.get()), has(ModItems.FROMAGE_SPAR_SHARD))
+                .group("fromage_spar")
+                .save(output, "alittlebitofeverything:fromage_spar_packing");
+
+        shapeless(RecipeCategory.MISC, ModItems.FROMAGE_SPAR_SHARD.get(), 4)
+                .requires(ModItems.FROMAGE_SPAR)
+                .unlockedBy(getHasName(ModItems.FROMAGE_SPAR.get()), has(ModItems.FROMAGE_SPAR))
+                .group("fromage_spar")
+                .save(output, "alittlebitofeverything:fromage_spar_unpacking");
+
+        shaped(RecipeCategory.MISC, ModBlocks.FROMAGE_SPAR_SHARD_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.FROMAGE_SPAR_SHARD.get())
+                .unlockedBy(getHasName(ModItems.FROMAGE_SPAR_SHARD.get()), has(ModItems.FROMAGE_SPAR_SHARD))
+                .group("fromage_spar")
+                .save(output, "alittlebitofeverything:fromage_spar_shard_block_packing");
+
+        shapeless(RecipeCategory.MISC, ModItems.FROMAGE_SPAR_SHARD.get(), 9)
+                .requires(ModBlocks.FROMAGE_SPAR_SHARD_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.FROMAGE_SPAR_SHARD_BLOCK.get()), has(ModBlocks.FROMAGE_SPAR_SHARD_BLOCK))
+                .group("fromage_spar")
+                .save(output, "alittlebitofeverything:fromage_spar_shard_block_unpacking");
 
 
-
-
-        List<ItemLike> PIGEONITE_SMELTABLES = List.of(ModItems.RAW_PIGEONITE, ModBlocks.PIGEONITE);
+        List<ItemLike> PIGEONITE_SMELTABLES = List.of(ModItems.RAW_PIGEONITE, ModBlocks.PIGEONITE_ROSE_SPAR_ORE);
 
         oreSmelting(PIGEONITE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.PIGEONITE.get(), 0.25f, 200, "pigeonite");
         oreBlasting(PIGEONITE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.PIGEONITE.get(), 0.25f, 100, "pigeonite");
 
-        List<ItemLike> OLIVINE_SMELTABLES = List.of(ModItems.RAW_OLIVINE, ModBlocks.OLIVINE);
+        List<ItemLike> OLIVINE_SMELTABLES = List.of(ModItems.RAW_OLIVINE, ModBlocks.OLIVINE_ROSE_SPAR_ORE);
 
         oreSmelting(OLIVINE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.OLIVINE.get(), 0.25f, 200, "olivine");
         oreBlasting(OLIVINE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.OLIVINE.get(), 0.25f, 100, "olivine");

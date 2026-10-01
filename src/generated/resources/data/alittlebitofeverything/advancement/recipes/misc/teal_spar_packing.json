@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_teal_spar_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alittlebitofeverything:teal_spar_shard"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alittlebitofeverything:teal_spar_packing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_teal_spar_shard"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alittlebitofeverything:teal_spar_packing"
+    ]
+  }
+}

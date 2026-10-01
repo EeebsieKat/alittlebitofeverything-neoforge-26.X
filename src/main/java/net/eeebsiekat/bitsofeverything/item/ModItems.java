@@ -2,14 +2,13 @@ package net.eeebsiekat.bitsofeverything.item;
 
 import net.eeebsiekat.bitsofeverything.ALittleBitofEverything;
 import net.eeebsiekat.bitsofeverything.food.ModFoods;
-import net.eeebsiekat.bitsofeverything.item.custom.DataTabletItem;
+import net.eeebsiekat.bitsofeverything.item.custom.DatapadItem;
 import net.eeebsiekat.bitsofeverything.item.custom.MetalDetectorItem;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.SuspiciousStewEffects;
 import net.minecraft.world.item.component.TooltipDisplay;
@@ -24,6 +23,12 @@ public class ModItems {
 
     public static final DeferredItem<Item> ROSE_SPAR = ITEMS.registerSimpleItem("rose_spar");
     public static final DeferredItem<Item> ROSE_SPAR_SHARD = ITEMS.registerSimpleItem("rose_spar_shard");
+    public static final DeferredItem<Item> TEAL_SPAR = ITEMS.registerSimpleItem("teal_spar");
+    public static final DeferredItem<Item> TEAL_SPAR_SHARD = ITEMS.registerSimpleItem("teal_spar_shard");
+    public static final DeferredItem<Item> FROMAGE_SPAR = ITEMS.registerSimpleItem("fromage_spar");
+    public static final DeferredItem<Item> FROMAGE_SPAR_SHARD = ITEMS.registerSimpleItem("fromage_spar_shard");
+    public static final DeferredItem<Item> CHROMITE = ITEMS.registerSimpleItem("chromite");
+    public static final DeferredItem<Item> CHROMITE_SHARD = ITEMS.registerSimpleItem("chromite_shard");
     public static final DeferredItem<Item> RAW_OLIVINE = ITEMS.registerSimpleItem("raw_olivine");
     public static final DeferredItem<Item> OLIVINE = ITEMS.registerSimpleItem("olivine");
     public static final DeferredItem<Item> RAW_PIGEONITE = ITEMS.registerSimpleItem("raw_pigeonite");
@@ -31,8 +36,8 @@ public class ModItems {
 
     public static final DeferredItem<Item> METAL_DETECTOR = ITEMS.registerItem("metal_detector",
             properties -> new MetalDetectorItem(properties.durability(64)));
-    public static final DeferredItem<Item> DATA_TABLET = ITEMS.registerItem("data_tablet",
-            properties -> new DataTabletItem(properties.durability(0)));
+    public static final DeferredItem<Item> DATAPAD = ITEMS.registerItem("datapad",
+            properties -> new DatapadItem(properties.durability(0)));
 
     public static final DeferredItem<Item> FROMAGE = ITEMS.registerItem("fromage",
             properties -> new Item(properties.food(ModFoods.FROMAGE, ModFoods.FROMAGE_CONSUMABLE)));

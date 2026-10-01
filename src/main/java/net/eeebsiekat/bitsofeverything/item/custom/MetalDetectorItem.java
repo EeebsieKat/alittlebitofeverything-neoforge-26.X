@@ -1,5 +1,6 @@
 package net.eeebsiekat.bitsofeverything.item.custom;
 
+import net.eeebsiekat.bitsofeverything.tags.ModTags;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.BlockParticleOption;
@@ -88,7 +89,7 @@ public class MetalDetectorItem extends Item {
     }
 
     private boolean isValueableBlock(BlockState blockState) {
-        return blockState.is(Blocks.IRON_ORE) || blockState.is(Blocks.DEEPSLATE_IRON_ORE) || blockState.is(Blocks.GOLD_ORE) || blockState.is(Blocks.DEEPSLATE_GOLD_ORE);
+        return blockState.is(ModTags.Blocks.METAL_DETECTABLES);
     }
 
     @Override

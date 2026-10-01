@@ -1,6 +1,7 @@
 package net.eeebsiekat.bitsofeverything.block.custom;
 
 import net.eeebsiekat.bitsofeverything.item.ModItems;
+import net.eeebsiekat.bitsofeverything.tags.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.particles.ParticleTypes;
@@ -42,7 +43,8 @@ public class FoodPrinterBlock extends Block {
     }
 
     private boolean isValidItem(ItemStack item) {
-        return item.is(ModItems.CARBON);
+
+        return item.is(ModTags.Items.CARBON_LIKES);
     }
 
     private Item getRandomItemFromTag(TagKey<Item> key) {

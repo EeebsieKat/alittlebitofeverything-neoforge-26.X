@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "alittlebitofeverything:block/breccia_pressure_plate"
+    },
+    "powered=true": {
+      "model": "alittlebitofeverything:block/breccia_pressure_plate_down"
+    }
+  }
+}

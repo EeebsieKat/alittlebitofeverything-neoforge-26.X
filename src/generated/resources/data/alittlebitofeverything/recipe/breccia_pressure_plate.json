@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "alittlebitofeverything:breccia"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "alittlebitofeverything:breccia_pressure_plate"
+  }
+}

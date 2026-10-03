@@ -1,12 +1,21 @@
 {
   "item.alittlebitofeverything.rose_spar": "Rose Spar",
   "item.alittlebitofeverything.rose_spar_shard": "Rose Spar Shard",
+
   "item.alittlebitofeverything.teal_spar": "Teal Spar",
   "item.alittlebitofeverything.teal_spar_shard": "Teal Spar Shard",
+
   "item.alittlebitofeverything.fromage_spar": "Fromage Spar",
   "item.alittlebitofeverything.fromage_spar_shard": "Fromage Spar Shard",
+
   "item.alittlebitofeverything.chromite": "Chromite",
   "item.alittlebitofeverything.chromite_shard": "Chromite Shard",
+  "item.alittlebitofeverything.chromite_sabre": "Chromite Sabre",
+  "item.alittlebitofeverything.chromite_pickaxe": "Chromite Pickaxe",
+  "item.alittlebitofeverything.chromite_axe": "Chromite Axe",
+  "item.alittlebitofeverything.chromite_shovel": "Chromite Shovel",
+  "item.alittlebitofeverything.chromite_hoe": "Chromite Hoe",
+  "item.alittlebitofeverything.chromite_spear": "Chromite Spear",
 
   "item.alittlebitofeverything.raw_olivine": "Raw Olivine",
   "item.alittlebitofeverything.olivine": "Olivine",
@@ -47,6 +56,14 @@
 
   "block.alittlebitofeverything.breccia_stairs": "Breccia Stairs",
   "block.alittlebitofeverything.breccia_slab": "Breccia Slab",
+  "block.alittlebitofeverything.breccia_pressure_plate": "Breccia Pressure Plate",
+  "block.alittlebitofeverything.breccia_button": "Breccia Button",
+  "block.alittlebitofeverything.breccia_fence": "Breccia Fence",
+  "block.alittlebitofeverything.breccia_fence_gate": "Breccia Fence Gate",
+  "block.alittlebitofeverything.breccia_wall": "Breccia Wall",
+  "block.alittlebitofeverything.breccia_dor": "Breccia Dor",
+  "block.alittlebitofeverything.breccia_trapdor": "Breccia Trapdor",
+
   "block.alittlebitofeverything.sintered_breccia_stairs": "Sintered Breccia Stairs",
   "block.alittlebitofeverything.sintered_breccia_slab": "Sintered Breccia Slab",
 

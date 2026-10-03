@@ -4,15 +4,19 @@ import net.eeebsiekat.bitsofeverything.ALittleBitofEverything;
 import net.eeebsiekat.bitsofeverything.block.ModBlocks;
 import net.eeebsiekat.bitsofeverything.item.ModItems;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.SuspiciousEffectHolder;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -175,7 +179,6 @@ public class ModRecipeProvider extends RecipeProvider {
                 .group("fromage_spar")
                 .save(output, "alittlebitofeverything:fromage_spar_shard_block_unpacking");
 
-
         List<ItemLike> PIGEONITE_SMELTABLES = List.of(ModItems.RAW_PIGEONITE, ModBlocks.PIGEONITE_ROSE_SPAR_ORE);
 
         oreSmelting(PIGEONITE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.PIGEONITE.get(), 0.25f, 200, "pigeonite");
@@ -196,6 +199,91 @@ public class ModRecipeProvider extends RecipeProvider {
                 .group("breccia")
                 .save(output);
         slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SINTERED_BRECCIA_SLAB.get(), ModBlocks.SINTERED_BRECCIA.get());
+        buttonBuilder(ModBlocks.BRECCIA_BUTTON.get(), Ingredient.of(ModBlocks.BRECCIA.get()))
+                .unlockedBy(getHasName(ModBlocks.BRECCIA.get()), has(ModBlocks.BRECCIA))
+                .group("breccia")
+                .save(output);
+        pressurePlate(ModBlocks.BRECCIA_PRESSURE_PLATE.get(), ModBlocks.BRECCIA);
+        fenceBuilder(ModBlocks.BRECCIA_FENCE, Ingredient.of(ModBlocks.BRECCIA))
+                .unlockedBy(getHasName(ModBlocks.BRECCIA.get()), has(ModBlocks.BRECCIA))
+                .group("breccia")
+                .save(output);
+        fenceGateBuilder(ModBlocks.BRECCIA_FENCE_GATE, Ingredient.of(ModBlocks.BRECCIA))
+                .unlockedBy(getHasName(ModBlocks.BRECCIA.get()), has(ModBlocks.BRECCIA))
+                .group("breccia")
+                .save(output);
+        wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BRECCIA_WALL.get(), ModBlocks.BRECCIA.get());
+        doorBuilder(ModBlocks.BRECCIA_DOR.get(), Ingredient.of(ModBlocks.BRECCIA.get()))
+                .unlockedBy(getHasName(ModBlocks.BRECCIA.get()), has(ModBlocks.BRECCIA))
+                .group("breccia")
+                .save(output);
+        trapdoorBuilder(ModBlocks.BRECCIA_TRAPDOR.get(), Ingredient.of(ModBlocks.BRECCIA.get()))
+                .unlockedBy(getHasName(ModBlocks.BRECCIA.get()), has(ModBlocks.BRECCIA))
+                .group("breccia")
+                .save(output);
+
+        shaped(RecipeCategory.MISC, ModItems.CHROMITE_BAR.get())
+                .pattern(" C ")
+                .pattern(" C ")
+                .define('C', ModItems.CHROMITE.get())
+                .unlockedBy(getHasName(ModItems.CHROMITE.get()), has(ModItems.CHROMITE))
+                .group("chromite")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.CHROMITE_SABRE.get())
+                .pattern("C")
+                .pattern("C")
+                .pattern("B")
+                .define('C', ModItems.CHROMITE.get())
+                .define('B', ModItems.CHROMITE_BAR.get())
+                .unlockedBy(getHasName(ModItems.CHROMITE.get()), has(ModItems.CHROMITE))
+                .group("chromite")
+                .save(output);
+        shaped(RecipeCategory.TOOLS, ModItems.CHROMITE_PICKAXE.get())
+                .pattern("CCC")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('C', ModItems.CHROMITE.get())
+                .define('B', ModItems.CHROMITE_BAR.get())
+                .unlockedBy(getHasName(ModItems.CHROMITE.get()), has(ModItems.CHROMITE))
+                .group("chromite")
+                .save(output);
+        shaped(RecipeCategory.COMBAT, ModItems.CHROMITE_AXE.get())
+                .pattern("CC")
+                .pattern("BC")
+                .pattern("B ")
+                .define('C', ModItems.CHROMITE.get())
+                .define('B', ModItems.CHROMITE_BAR.get())
+                .unlockedBy(getHasName(ModItems.CHROMITE.get()), has(ModItems.CHROMITE))
+                .group("chromite")
+                .save(output);
+        shaped(RecipeCategory.TOOLS, ModItems.CHROMITE_SHOVEL.get())
+                .pattern("C")
+                .pattern("B")
+                .pattern("B")
+                .define('C', ModItems.CHROMITE.get())
+                .define('B', ModItems.CHROMITE_BAR.get())
+                .unlockedBy(getHasName(ModItems.CHROMITE.get()), has(ModItems.CHROMITE))
+                .group("chromite")
+                .save(output);
+        shaped(RecipeCategory.TOOLS, ModItems.CHROMITE_HOE.get())
+                .pattern("CC")
+                .pattern("B ")
+                .pattern("B ")
+                .define('C', ModItems.CHROMITE.get())
+                .define('B', ModItems.CHROMITE_BAR.get())
+                .unlockedBy(getHasName(ModItems.CHROMITE.get()), has(ModItems.CHROMITE))
+                .group("chromite")
+                .save(output);
+        shaped(RecipeCategory.COMBAT, ModItems.CHROMITE_SPEAR.get())
+                .pattern("  C")
+                .pattern(" B ")
+                .pattern("B  ")
+                .define('C', ModItems.CHROMITE.get())
+                .define('B', ModItems.CHROMITE_BAR.get())
+                .unlockedBy(getHasName(ModItems.CHROMITE.get()), has(ModItems.CHROMITE))
+                .group("chromite")
+                .save(output);
 
     }
 

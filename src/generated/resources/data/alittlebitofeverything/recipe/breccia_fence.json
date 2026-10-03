@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "breccia",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "alittlebitofeverything:breccia"
+  },
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "result": {
+    "count": 3,
+    "id": "alittlebitofeverything:breccia_fence"
+  }
+}

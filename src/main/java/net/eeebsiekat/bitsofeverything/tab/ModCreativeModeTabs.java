@@ -33,6 +33,13 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.CHROMITE);
                         output.accept(ModItems.CHROMITE_SHARD);
+                        output.accept(ModItems.CHROMITE_BAR);
+                        output.accept(ModItems.CHROMITE_SABRE);
+                        output.accept(ModItems.CHROMITE_AXE);
+                        output.accept(ModItems.CHROMITE_PICKAXE);
+                        output.accept(ModItems.CHROMITE_SHOVEL);
+                        output.accept(ModItems.CHROMITE_HOE);
+                        output.accept(ModItems.CHROMITE_SPEAR);
 
                         output.accept(ModItems.RAW_OLIVINE);
                         output.accept(ModItems.OLIVINE);
@@ -80,6 +87,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.POLISHED_BRECCIA);
                         output.accept(ModBlocks.BRECCIA_STAIRS);
                         output.accept(ModBlocks.BRECCIA_SLAB);
+                        output.accept(ModBlocks.BRECCIA_PRESSURE_PLATE);
+                        output.accept(ModBlocks.BRECCIA_BUTTON);
+                        output.accept(ModBlocks.BRECCIA_FENCE);
+                        output.accept(ModBlocks.BRECCIA_FENCE_GATE);
+                        output.accept(ModBlocks.BRECCIA_WALL);
+                        output.accept(ModBlocks.BRECCIA_DOR);
+                        output.accept(ModBlocks.BRECCIA_TRAPDOR);
 
                         output.accept(ModBlocks.ROSE_SPAR_STONE);
                         output.accept(ModBlocks.OLIVINE_ROSE_SPAR_ORE);

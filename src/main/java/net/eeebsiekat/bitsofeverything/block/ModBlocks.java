@@ -8,11 +8,11 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.TooltipDisplay;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -101,10 +101,51 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> BRECCIA_STAIRS = registerBlock("breccia_stairs",
             properties -> new StairBlock(ModBlocks.BRECCIA.get().defaultBlockState(), properties.strength(3f)
-                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)));
     public static final DeferredBlock<Block> BRECCIA_SLAB = registerBlock("breccia_slab",
             properties -> new SlabBlock(properties.strength(3f)
-                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> BRECCIA_PRESSURE_PLATE = registerBlock("breccia_pressure_plate",
+            properties -> new PressurePlateBlock(BlockSetType.GOLD, properties.strength(3f)
+                    .noCollision()
+                    .strength(0.5f)
+                    .pushReaction(PushReaction.DESTROY)
+                    .sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> BRECCIA_BUTTON = registerBlock("breccia_button",
+            properties -> new ButtonBlock(BlockSetType.GOLD, 20, properties.strength(3f)
+                    .noCollision()
+                    .strength(0.5f)
+                    .pushReaction(PushReaction.DESTROY)
+                    .sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> BRECCIA_FENCE = registerBlock("breccia_fence",
+            properties -> new FenceBlock(properties.strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> BRECCIA_FENCE_GATE = registerBlock("breccia_fence_gate",
+            properties -> new FenceGateBlock(WoodType.ACACIA, properties.strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> BRECCIA_WALL = registerBlock("breccia_wall",
+            properties -> new WallBlock(properties.strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> BRECCIA_DOR = registerBlock("breccia_dor",
+            properties -> new DoorBlock(BlockSetType.STONE, properties.strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .noOcclusion()
+                    .strength(3f)
+                    .sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> BRECCIA_TRAPDOR = registerBlock("breccia_trapdor",
+            properties -> new TrapDoorBlock(BlockSetType.STONE, properties.strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .noOcclusion()
+                    .strength(3f)
+                    .sound(SoundType.DEEPSLATE)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function, Component... components) {

@@ -7,9 +7,7 @@ import net.eeebsiekat.bitsofeverything.item.custom.MetalDetectorItem;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.Foods;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.SuspiciousStewEffects;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.neoforged.bus.api.IEventBus;
@@ -23,14 +21,20 @@ public class ModItems {
 
     public static final DeferredItem<Item> ROSE_SPAR = ITEMS.registerSimpleItem("rose_spar");
     public static final DeferredItem<Item> ROSE_SPAR_SHARD = ITEMS.registerSimpleItem("rose_spar_shard");
+
     public static final DeferredItem<Item> TEAL_SPAR = ITEMS.registerSimpleItem("teal_spar");
     public static final DeferredItem<Item> TEAL_SPAR_SHARD = ITEMS.registerSimpleItem("teal_spar_shard");
+
     public static final DeferredItem<Item> FROMAGE_SPAR = ITEMS.registerSimpleItem("fromage_spar");
     public static final DeferredItem<Item> FROMAGE_SPAR_SHARD = ITEMS.registerSimpleItem("fromage_spar_shard");
+
     public static final DeferredItem<Item> CHROMITE = ITEMS.registerSimpleItem("chromite");
     public static final DeferredItem<Item> CHROMITE_SHARD = ITEMS.registerSimpleItem("chromite_shard");
+    public static final DeferredItem<Item> CHROMITE_BAR = ITEMS.registerSimpleItem("chromite_bar");
+
     public static final DeferredItem<Item> RAW_OLIVINE = ITEMS.registerSimpleItem("raw_olivine");
     public static final DeferredItem<Item> OLIVINE = ITEMS.registerSimpleItem("olivine");
+
     public static final DeferredItem<Item> RAW_PIGEONITE = ITEMS.registerSimpleItem("raw_pigeonite");
     public static final DeferredItem<Item> PIGEONITE = ITEMS.registerSimpleItem("pigeonite");
 
@@ -58,6 +62,21 @@ public class ModItems {
                     super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
                 }
             });
+
+    public static final DeferredItem<Item> CHROMITE_SABRE = ITEMS.registerItem("chromite_sabre",
+            properties -> new Item(properties.sword(ModToolTiers.CHROMITE, 3.0f, -2.4f).fireResistant()));
+    public static final DeferredItem<Item> CHROMITE_PICKAXE = ITEMS.registerItem("chromite_pickaxe",
+            properties -> new Item(properties.pickaxe(ModToolTiers.CHROMITE, 1.0f, -2.8f).fireResistant()));
+    public static final DeferredItem<Item> CHROMITE_SHOVEL = ITEMS.registerItem("chromite_shovel",
+            properties -> new ShovelItem(ModToolTiers.CHROMITE, 1.5f, -3.0f, properties.fireResistant()));
+    public static final DeferredItem<Item> CHROMITE_AXE = ITEMS.registerItem("chromite_axe",
+            properties -> new AxeItem(ModToolTiers.CHROMITE, 6.0f, -3.2f, properties.fireResistant()));
+    public static final DeferredItem<Item> CHROMITE_HOE = ITEMS.registerItem("chromite_hoe",
+            properties -> new HoeItem(ModToolTiers.CHROMITE, 0f, -3.0f, properties.fireResistant()));
+    public static final DeferredItem<Item> CHROMITE_SPEAR = ITEMS.registerItem("chromite_spear",
+            properties -> new Item(properties.spear(ModToolTiers.CHROMITE, 0.5f, 1.7f, 0.3f,
+                    3.5f, 13f, 8.5f, 5.1f, 13.37f, 4.67f).fireResistant()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

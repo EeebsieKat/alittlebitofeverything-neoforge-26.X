@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "breccia",
+  "ingredients": [
+    "alittlebitofeverything:breccia"
+  ],
+  "result": {
+    "id": "alittlebitofeverything:breccia_button"
+  }
+}

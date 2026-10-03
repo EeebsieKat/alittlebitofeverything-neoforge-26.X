@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "chromite",
+  "key": {
+    "B": "alittlebitofeverything:chromite_bar",
+    "C": "alittlebitofeverything:chromite"
+  },
+  "pattern": [
+    "CC",
+    "B ",
+    "B "
+  ],
+  "result": {
+    "id": "alittlebitofeverything:chromite_hoe"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "breccia",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "alittlebitofeverything:breccia"
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "id": "alittlebitofeverything:breccia_fence_gate"
+  }
+}

@@ -69,6 +69,13 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.FROMAGE_SPAR_SHARD_BLOCK.get());
         tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
 
+        tag(ModTags.Blocks.NEEDS_CHROMITE_TOOL)
+                .add(ModBlocks.FOOD_PRINTER.get())
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+        tag(ModTags.Blocks.INCORRECT_FOR_CHROMITE_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .remove(ModTags.Blocks.NEEDS_CHROMITE_TOOL);
+
         tag(ModTags.Blocks.METAL_DETECTABLES)
                 .addTag(Tags.Blocks.ORES)
                 .add(ModBlocks.OLIVINE_ROSE_SPAR_ORE.get())
@@ -77,5 +84,25 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.CHROMITE_SINTERED_BRECCIA_ORE.get())
                 .add(ModBlocks.CHROMITE_ROSE_SPAR_ORE.get());
 
+        tag(BlockTags.STAIRS)
+                .add(ModBlocks.BRECCIA_STAIRS.get())
+                .add(ModBlocks.SINTERED_BRECCIA_STAIRS.get());
+        tag(BlockTags.SLABS)
+                .add(ModBlocks.BRECCIA_SLAB.get())
+                .add(ModBlocks.SINTERED_BRECCIA_SLAB.get());
+        tag(BlockTags.PRESSURE_PLATES)
+                .add(ModBlocks.BRECCIA_PRESSURE_PLATE.get());
+        tag(BlockTags.BUTTONS)
+                .add(ModBlocks.BRECCIA_BUTTON.get());
+        tag(BlockTags.FENCES)
+                .add(ModBlocks.BRECCIA_FENCE.get());
+        tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.BRECCIA_FENCE_GATE.get());
+        tag(BlockTags.WALLS)
+                .add(ModBlocks.BRECCIA_WALL.get());
+        tag(BlockTags.DOORS)
+                .add(ModBlocks.BRECCIA_DOR.get());
+        tag(BlockTags.TRAPDOORS)
+                .add(ModBlocks.BRECCIA_TRAPDOR.get());
     }
 }

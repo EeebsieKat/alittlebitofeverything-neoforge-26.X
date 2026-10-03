@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "breccia",
+  "key": {
+    "#": "alittlebitofeverything:breccia"
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "alittlebitofeverything:breccia_trapdor"
+  }
+}

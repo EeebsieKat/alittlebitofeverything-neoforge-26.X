@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "alittlebitofeverything:chromite"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "alittlebitofeverything:chromite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "alittlebitofeverything:chromite"
+      }
+    ]
+  }
+}

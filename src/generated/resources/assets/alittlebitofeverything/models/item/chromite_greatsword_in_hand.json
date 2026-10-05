@@ -1,0 +1,6 @@
+{
+  "parent": "alittlebitofeverything:item/greatsword_in_hand",
+  "textures": {
+    "layer0": "alittlebitofeverything:item/chromite_greatsword_in_hand"
+  }
+}

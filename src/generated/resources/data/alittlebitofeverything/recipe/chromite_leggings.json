@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "chromite",
+  "key": {
+    "C": "alittlebitofeverything:chromite"
+  },
+  "pattern": [
+    "CCC",
+    "C C",
+    "C C"
+  ],
+  "result": {
+    "id": "alittlebitofeverything:chromite_leggings"
+  }
+}

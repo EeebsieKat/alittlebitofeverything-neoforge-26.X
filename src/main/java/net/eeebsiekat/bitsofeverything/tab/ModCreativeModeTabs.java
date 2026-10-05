@@ -33,6 +33,10 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.CHROMITE);
                         output.accept(ModItems.CHROMITE_SHARD);
+                        output.accept(ModItems.CHROMITE_HELMET);
+                        output.accept(ModItems.CHROMITE_CHESTPLATE);
+                        output.accept(ModItems.CHROMITE_LEGGINGS);
+                        output.accept(ModItems.CHROMITE_BOOTS);
                         output.accept(ModItems.CHROMITE_BAR);
                         output.accept(ModItems.CHROMITE_SABRE);
                         output.accept(ModItems.CHROMITE_AXE);
@@ -40,6 +44,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHROMITE_SHOVEL);
                         output.accept(ModItems.CHROMITE_HOE);
                         output.accept(ModItems.CHROMITE_SPEAR);
+                        output.accept(ModItems.CHROMITE_LANCE);
+                        output.accept(ModItems.CHROMITE_GREATSWORD);
+                        output.accept(ModItems.CHROMITE_HALBERD);
 
                         output.accept(ModItems.RAW_OLIVINE);
                         output.accept(ModItems.OLIVINE);

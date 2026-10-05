@@ -35,5 +35,14 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                 .add(ModItems.CHROMITE_HOE.get());
         tag(ItemTags.SPEARS)
                 .add(ModItems.CHROMITE_SPEAR.get());
+        tag(ModTags.Items.LANCES)
+                .add(ModItems.CHROMITE_LANCE.get());
+        tag(ModTags.Items.GREATSWORDS)
+                .add(ModItems.CHROMITE_GREATSWORD.get());
+
+        tag(ItemTags.HEAD_ARMOR).add(ModItems.CHROMITE_HELMET.get());
+        tag(ItemTags.CHEST_ARMOR).add(ModItems.CHROMITE_CHESTPLATE.get());
+        tag(ItemTags.LEG_ARMOR).add(ModItems.CHROMITE_LEGGINGS.get());
+        tag(ItemTags.FOOT_ARMOR).add(ModItems.CHROMITE_BOOTS.get());
     }
 }

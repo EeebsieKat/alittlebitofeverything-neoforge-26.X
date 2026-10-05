@@ -1,0 +1,6 @@
+{
+  "parent": "alittlebitofeverything:item/lance_in_hand",
+  "textures": {
+    "layer0": "alittlebitofeverything:item/chromite_lance_in_hand"
+  }
+}

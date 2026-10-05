@@ -73,7 +73,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.FOOD_PRINTER.get())
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
         tag(ModTags.Blocks.INCORRECT_FOR_CHROMITE_TOOL)
-                .addTag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .addTag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .remove(ModTags.Blocks.NEEDS_CHROMITE_TOOL);
 
         tag(ModTags.Blocks.METAL_DETECTABLES)

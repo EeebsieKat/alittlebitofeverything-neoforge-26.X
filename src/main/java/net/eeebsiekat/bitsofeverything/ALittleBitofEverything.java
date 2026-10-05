@@ -3,6 +3,7 @@ package net.eeebsiekat.bitsofeverything;
 import net.eeebsiekat.bitsofeverything.block.ModBlocks;
 import net.eeebsiekat.bitsofeverything.item.ModItems;
 import net.eeebsiekat.bitsofeverything.tab.ModCreativeModeTabs;
+import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -36,6 +37,7 @@ public class ALittleBitofEverything {
         NeoForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
@@ -45,6 +47,7 @@ public class ALittleBitofEverything {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
     }
+
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {

@@ -25,6 +25,9 @@ public class ModTags {
 
         public static final TagKey<Item> CHROMITE_REPAIRABLES = createTag("chromite_repairables");
 
+        public static final TagKey<Item> LANCES = createTag("lances");
+        public static final TagKey<Item> GREATSWORDS = createTag("greatswords");
+
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(Identifier.fromNamespaceAndPath(ALittleBitofEverything.MOD_ID, name));
         }

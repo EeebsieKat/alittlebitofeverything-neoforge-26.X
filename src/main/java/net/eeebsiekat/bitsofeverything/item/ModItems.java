@@ -9,7 +9,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.SuspiciousStewEffects;
+import net.minecraft.world.item.component.SwingAnimation;
 import net.minecraft.world.item.component.TooltipDisplay;
+import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -77,6 +79,26 @@ public class ModItems {
             properties -> new Item(properties.spear(ModToolTiers.CHROMITE, 0.5f, 1.7f, 0.3f,
                     3.5f, 13f, 8.5f, 5.1f, 13.37f, 4.67f).fireResistant()));
 
+    public static final DeferredItem<Item> CHROMITE_LANCE = ITEMS.registerItem("chromite_lance",
+            properties -> new Item(properties.spear(ModToolTiers.CHROMITE, 0.5f, 1.7f, 0.3f,
+                    3.5f, 13f, 8.5f, 5.1f, 13.37f, 4.67f)
+                    .component(DataComponents.SWING_ANIMATION, new SwingAnimation(SwingAnimationType.WHACK, 5)).fireResistant()));
+    public static final DeferredItem<Item> CHROMITE_GREATSWORD = ITEMS.registerItem("chromite_greatsword",
+            properties -> new Item(properties.sword(ModToolTiers.CHROMITE, 3.0f, -2.4f)
+                    .component(DataComponents.SWING_ANIMATION, new SwingAnimation(SwingAnimationType.WHACK, 8)).fireResistant()));
+    public static final DeferredItem<Item> CHROMITE_HALBERD = ITEMS.registerItem("chromite_halberd",
+            properties -> new Item(properties.spear(ModToolTiers.CHROMITE, 1.0f, 3.5f, 0.3f,
+                            3.5f, 13f, 8.5f, 5.1f, 13.37f, 4.67f)
+                    .component(DataComponents.SWING_ANIMATION, new SwingAnimation(SwingAnimationType.STAB, 5)).fireResistant()));
+
+    public static final DeferredItem<Item> CHROMITE_HELMET = ITEMS.registerItem("chromite_helmet",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.CHROMITE_ARMOR_MATERIAL, ArmorType.HELMET).fireResistant()));
+    public static final DeferredItem<Item> CHROMITE_CHESTPLATE = ITEMS.registerItem("chromite_chestplate",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.CHROMITE_ARMOR_MATERIAL, ArmorType.CHESTPLATE).fireResistant()));
+    public static final DeferredItem<Item> CHROMITE_LEGGINGS = ITEMS.registerItem("chromite_leggings",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.CHROMITE_ARMOR_MATERIAL, ArmorType.LEGGINGS).fireResistant()));
+    public static final DeferredItem<Item> CHROMITE_BOOTS = ITEMS.registerItem("chromite_boots",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.CHROMITE_ARMOR_MATERIAL, ArmorType.BOOTS).fireResistant()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

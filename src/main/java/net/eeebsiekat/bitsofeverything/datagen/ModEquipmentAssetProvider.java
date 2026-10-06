@@ -27,6 +27,7 @@ public class ModEquipmentAssetProvider implements DataProvider {
     private static void bootstrap(BiConsumer<ResourceKey<EquipmentAsset>, EquipmentClientInfo> output) {
         output.accept(ModArmorMaterials.CHROMITE_KEY, EquipmentClientInfo.builder()
                         .addHumanoidLayers(Identifier.fromNamespaceAndPath(ALittleBitofEverything.MOD_ID, "chromite"), false)
+                        .addLayers(EquipmentClientInfo.LayerType.HORSE_BODY, new EquipmentClientInfo.Layer(Identifier.fromNamespaceAndPath(ALittleBitofEverything.MOD_ID, "chromite")))
                 .build());
     }
 

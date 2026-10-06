@@ -37,6 +37,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHROMITE_CHESTPLATE);
                         output.accept(ModItems.CHROMITE_LEGGINGS);
                         output.accept(ModItems.CHROMITE_BOOTS);
+                        output.accept(ModItems.CHROMITE_HORSE_ARMOR);
                         output.accept(ModItems.CHROMITE_BAR);
                         output.accept(ModItems.CHROMITE_SABRE);
                         output.accept(ModItems.CHROMITE_AXE);

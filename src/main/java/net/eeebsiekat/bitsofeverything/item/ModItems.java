@@ -100,6 +100,9 @@ public class ModItems {
     public static final DeferredItem<Item> CHROMITE_BOOTS = ITEMS.registerItem("chromite_boots",
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.CHROMITE_ARMOR_MATERIAL, ArmorType.BOOTS).fireResistant()));
 
+    public static final DeferredItem<Item> CHROMITE_HORSE_ARMOR = ITEMS.registerItem("chromite_horse_armor",
+            properties -> new Item(properties.horseArmor(ModArmorMaterials.CHROMITE_ARMOR_MATERIAL).fireResistant()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

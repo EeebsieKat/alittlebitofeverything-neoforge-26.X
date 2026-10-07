@@ -42,7 +42,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.CHROMITE_ROSE_SPAR_ORE.get())
                 .add(ModBlocks.OLIVINE_ROSE_SPAR_ORE.get())
                 .add(ModBlocks.PIGEONITE_ROSE_SPAR_ORE.get())
-                .add(ModBlocks.FOOD_PRINTER.get());
+                .add(ModBlocks.FOOD_PRINTER.get())
+                .add(ModBlocks.CHROMITE_LAMP.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.OLIVINE_ROSE_SPAR_ORE.get())
@@ -66,7 +67,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.TEAL_SPAR_BLOCK.get())
                 .add(ModBlocks.TEAL_SPAR_SHARD_BLOCK.get())
                 .add(ModBlocks.FROMAGE_SPAR_BLOCK.get())
-                .add(ModBlocks.FROMAGE_SPAR_SHARD_BLOCK.get());
+                .add(ModBlocks.FROMAGE_SPAR_SHARD_BLOCK.get())
+                .add(ModBlocks.CHROMITE_LAMP.get());
         tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
 
         tag(ModTags.Blocks.NEEDS_CHROMITE_TOOL)

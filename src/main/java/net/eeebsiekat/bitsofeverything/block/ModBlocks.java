@@ -1,6 +1,7 @@
 package net.eeebsiekat.bitsofeverything.block;
 
 import net.eeebsiekat.bitsofeverything.ALittleBitofEverything;
+import net.eeebsiekat.bitsofeverything.block.custom.ChromiteLampBlock;
 import net.eeebsiekat.bitsofeverything.block.custom.FoodPrinterBlock;
 import net.eeebsiekat.bitsofeverything.item.ModItems;
 import net.minecraft.network.chat.Component;
@@ -147,6 +148,12 @@ public class ModBlocks {
                     .strength(3f)
                     .sound(SoundType.DEEPSLATE)));
 
+    public static final DeferredBlock<Block> CHROMITE_LAMP = registerBlock("chromite_lamp",
+            properties -> new ChromiteLampBlock(properties.strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.DEEPSLATE)
+                    .lightLevel(state -> state.getValue(ChromiteLampBlock.CLICKED) ? 15 : 0)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function, Component... components) {
         DeferredBlock<T> toReturn = BLOCKS.registerBlock(name, function);

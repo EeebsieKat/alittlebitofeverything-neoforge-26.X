@@ -108,6 +108,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PIGEONITE_ROSE_SPAR_ORE);
                         output.accept(ModBlocks.CHROMITE_ROSE_SPAR_ORE);
 
+                        output.accept(ModBlocks.CHROMITE_LAMP);
+
                         output.accept(ModBlocks.FOOD_PRINTER);
                     })
 

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "alittlebitofeverything:block/chromite_lamp"
+    },
+    "clicked=true": {
+      "model": "alittlebitofeverything:block/chromite_lamp_on"
+    }
+  }
+}

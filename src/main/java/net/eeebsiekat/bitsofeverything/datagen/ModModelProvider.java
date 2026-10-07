@@ -2,11 +2,13 @@ package net.eeebsiekat.bitsofeverything.datagen;
 
 import net.eeebsiekat.bitsofeverything.ALittleBitofEverything;
 import net.eeebsiekat.bitsofeverything.block.ModBlocks;
+import net.eeebsiekat.bitsofeverything.block.custom.ChromiteLampBlock;
 import net.eeebsiekat.bitsofeverything.item.ModArmorMaterials;
 import net.eeebsiekat.bitsofeverything.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
+import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.client.data.models.model.*;
 import net.minecraft.client.renderer.item.ClientItem;
 import net.minecraft.client.renderer.item.ItemModel;
@@ -104,6 +106,12 @@ public class ModModelProvider extends ModelProvider {
         blockModels.family(ModBlocks.SINTERED_BRECCIA.get())
                 .stairs(ModBlocks.SINTERED_BRECCIA_STAIRS.get())
                 .slab(ModBlocks.SINTERED_BRECCIA_SLAB.get());
+
+        blockModels.blockStateOutput.accept(
+                MultiVariantGenerator.dispatch(ModBlocks.CHROMITE_LAMP.get()).with(BlockModelGenerators.createBooleanModelDispatch(ChromiteLampBlock.CLICKED,
+                        BlockModelGenerators.plainVariant(blockModels.createSuffixedVariant(ModBlocks.CHROMITE_LAMP.get(), "_on", ModelTemplates.CUBE_ALL, TextureMapping::cube)),
+                        BlockModelGenerators.plainVariant(TexturedModel.CUBE.create(ModBlocks.CHROMITE_LAMP.get(), blockModels.modelOutput))))
+        );
     }
 
     private static final ModelTemplate LANCE_IN_HAND = new ModelTemplate(

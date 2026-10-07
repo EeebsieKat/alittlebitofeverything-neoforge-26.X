@@ -52,6 +52,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.BRECCIA_WALL.get());
         dropSelf(ModBlocks.BRECCIA_TRAPDOR.get());
 
+        dropSelf(ModBlocks.CHROMITE_LAMP.get());
+
         add(ModBlocks.BRECCIA_DOR.get(), this::createDoorTable);
         add(ModBlocks.BRECCIA_SLAB.get(), this::createSlabItemTable);
         add(ModBlocks.SINTERED_BRECCIA_SLAB.get(), this::createSlabItemTable);

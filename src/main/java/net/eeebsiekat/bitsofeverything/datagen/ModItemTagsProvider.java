@@ -44,5 +44,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTags.CHEST_ARMOR).add(ModItems.CHROMITE_CHESTPLATE.get());
         tag(ItemTags.LEG_ARMOR).add(ModItems.CHROMITE_LEGGINGS.get());
         tag(ItemTags.FOOT_ARMOR).add(ModItems.CHROMITE_BOOTS.get());
+
+        tag(ItemTags.BOW_ENCHANTABLE).add(ModItems.CHROMITE_SCYTHIA.get());
     }
 }

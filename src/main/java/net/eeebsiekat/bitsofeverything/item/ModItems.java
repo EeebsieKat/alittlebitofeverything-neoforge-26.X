@@ -103,6 +103,10 @@ public class ModItems {
     public static final DeferredItem<Item> CHROMITE_HORSE_ARMOR = ITEMS.registerItem("chromite_horse_armor",
             properties -> new Item(properties.horseArmor(ModArmorMaterials.CHROMITE_ARMOR_MATERIAL).fireResistant()));
 
+    // NOTE: Make a new projectile for this!! (Scythian Bolt)
+    public static final DeferredItem<Item> CHROMITE_SCYTHIA = ITEMS.registerItem("chromite_scythia",
+            properties -> new BowItem(properties.durability(750).fireResistant()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

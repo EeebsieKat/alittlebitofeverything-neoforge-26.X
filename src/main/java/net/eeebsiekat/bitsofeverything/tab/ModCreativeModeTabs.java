@@ -48,6 +48,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHROMITE_LANCE);
                         output.accept(ModItems.CHROMITE_GREATSWORD);
                         output.accept(ModItems.CHROMITE_HALBERD);
+                        output.accept(ModItems.CHROMITE_SCYTHIA);
 
                         output.accept(ModItems.RAW_OLIVINE);
                         output.accept(ModItems.OLIVINE);

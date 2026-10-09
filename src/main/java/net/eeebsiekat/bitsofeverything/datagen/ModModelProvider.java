@@ -70,6 +70,12 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateTrimmableItem(ModItems.CHROMITE_BOOTS.get(), ModArmorMaterials.CHROMITE_KEY, ItemModelGenerators.TRIM_PREFIX_BOOTS, false);
 
         itemModels.generateFlatItem(ModItems.CHROMITE_HORSE_ARMOR.get(), ModelTemplates.FLAT_ITEM);
+
+        // NOTE: Make 32x32 _in_hand texture for this later
+        itemModels.createFlatItemModel(ModItems.CHROMITE_SCYTHIA.get(), ModelTemplates.BOW);
+        itemModels.generateBow(ModItems.CHROMITE_SCYTHIA.get());
+
+
         //Blocks
         blockModels.createTrivialCube(ModBlocks.ROSE_SPAR_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.ROSE_SPAR_SHARD_BLOCK.get());

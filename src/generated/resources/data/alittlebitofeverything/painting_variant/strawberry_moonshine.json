@@ -1,0 +1,13 @@
+{
+  "asset_id": "alittlebitofeverything:strawberry_moonshine",
+  "author": {
+    "color": "gray",
+    "translate": "painting.alittlebitofeverything.strawberry_moonshine.author"
+  },
+  "height": 1,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.alittlebitofeverything.strawberry_moonshine.title"
+  },
+  "width": 3
+}

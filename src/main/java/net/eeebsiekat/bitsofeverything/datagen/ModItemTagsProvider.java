@@ -6,6 +6,7 @@ import net.eeebsiekat.bitsofeverything.tags.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.data.ItemTagsProvider;
 
 import java.util.concurrent.CompletableFuture;
@@ -46,5 +47,9 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTags.FOOT_ARMOR).add(ModItems.CHROMITE_BOOTS.get());
 
         tag(ItemTags.BOW_ENCHANTABLE).add(ModItems.CHROMITE_SCYTHIA.get());
+
+        tag(ModTags.Items.GUN_BULLETS)
+                .add(Items.SKELETON_SKULL)
+                .add(Items.WITHER_SKELETON_SKULL);
     }
 }

@@ -23,6 +23,9 @@
   "item.alittlebitofeverything.chromite_spear": "Chromite Spear",
   "item.alittlebitofeverything.chromite_scythia": "Chromite Scythia",
 
+  "item.alittlebitofeverything.chromite_glock": "Chromite Glock",
+  "item.alittlebitofeverything.chromite_sniper": "Chromite Sniper",
+
   "item.alittlebitofeverything.raw_olivine": "Raw Olivine",
   "item.alittlebitofeverything.olivine": "Olivine",
   "item.alittlebitofeverything.raw_pigeonite": "Raw Pigeonite",
@@ -59,7 +62,8 @@
   "block.alittlebitofeverything.carbon_sintered_breccia_ore": "Carbon Sintered Breccia Ore",
   "block.alittlebitofeverything.carbon_breccia_ore": "Carbon Breccia Ore",
   "block.alittlebitofeverything.food_printer": "Food Printer",
-  "block.alittlebitofeverything.chromite_lamp": "Chromite lamp",
+  "block.alittlebitofeverything.chromite_lamp": "Chromite Lamp",
+  "block.alittlebitofeverything.brass_flower": "Brass Flower",
 
   "block.alittlebitofeverything.breccia_stairs": "Breccia Stairs",
   "block.alittlebitofeverything.breccia_slab": "Breccia Slab",
@@ -73,6 +77,15 @@
 
   "block.alittlebitofeverything.sintered_breccia_stairs": "Sintered Breccia Stairs",
   "block.alittlebitofeverything.sintered_breccia_slab": "Sintered Breccia Slab",
+
+  "painting.alittlebitofeverything.doobie_wap.title": "Doobie Wap",
+  "painting.alittlebitofeverything.doobie_wap.author": "EeebsieKat",
+  "painting.alittlebitofeverything.eye_see_you.title": "Eye See You",
+  "painting.alittlebitofeverything.eye_see_you.author": "EeebsieKat",
+  "painting.alittlebitofeverything.strawberry_moonshine.title": "Strawberry Moonshine",
+  "painting.alittlebitofeverything.strawberry_moonshine.author": "EeebsieKat",
+
+  "stat.alittlebitofeverything.valuables_found": "Valuables Found",
 
   "creativetab.alittlebitofeverything.everything_items": "A Little Bit of Items",
   "creativetab.alittlebitofeverything.everything_blocks": "A Little Bit of Blocks",

@@ -6,6 +6,7 @@ import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -13,6 +14,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.ComputeFovModifierEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
@@ -39,6 +41,37 @@ public class ALittleBitofClient {
         ALittleBitofEverything.LOGGER.info("ARMPOSES >> {}", java.util.Arrays.toString(net.minecraft.client.model.HumanoidModel.ArmPose.values()));
     }
 
+    @SubscribeEvent
+    public static void onComputeFovModifierEvent(ComputeFovModifierEvent event) {
+        if(event.getPlayer().isUsingItem() && event.getPlayer().getUseItem().getItem() == ModItems.CHROMITE_SCYTHIA.get()) {
+            float fovModifier = 1f;
+            int ticksUsingItem = event.getPlayer().getTicksUsingItem();
+            float deltaTicks = (float)ticksUsingItem / 20f;
+            if(deltaTicks > 1f) {
+                deltaTicks = 1f;
+            } else {
+                deltaTicks *= deltaTicks;
+            }
+            fovModifier *= 1f - deltaTicks * 0.15f;
+            event.setNewFovModifier(fovModifier);
+        }
+
+        Player player = event.getPlayer();
+
+        if (player.isUsingItem() && player.getUseItem().getItem() == ModItems.CHROMITE_SNIPER.get()) {
+            float ticksUsingItem = player.getTicksUsingItem();
+            float deltaTicks = ticksUsingItem / 20f;
+
+            if (deltaTicks > 1f) {
+                deltaTicks = 1f;
+            } else {
+                deltaTicks *= deltaTicks;
+            }
+
+            float fovModifier = 1f - (deltaTicks * 0.55f);
+            event.setNewFovModifier(fovModifier);
+        }
+    }
 
     @SubscribeEvent
     public static void registerClientExtensions(RegisterClientExtensionsEvent event) {
@@ -51,5 +84,23 @@ public class ALittleBitofClient {
                 return HumanoidModel.ArmPose.EMPTY;
             }
         }, ModItems.CHROMITE_GREATSWORD.get());
+        event.registerItem(new IClientItemExtensions() {
+            @Override
+            public HumanoidModel.ArmPose getArmPose(LivingEntity entity, InteractionHand hand, ItemStack stack) {
+                if (hand == InteractionHand.MAIN_HAND && !stack.isEmpty()) {
+                    return HumanoidModel.ArmPose.SPEAR;
+                }
+                return HumanoidModel.ArmPose.EMPTY;
+            }
+        }, ModItems.CHROMITE_GLOCK.get());
+        event.registerItem(new IClientItemExtensions() {
+            @Override
+            public HumanoidModel.ArmPose getArmPose(LivingEntity entity, InteractionHand hand, ItemStack stack) {
+                if (hand == InteractionHand.MAIN_HAND && !stack.isEmpty()) {
+                    return HumanoidModel.ArmPose.CROSSBOW_HOLD;
+                }
+                return HumanoidModel.ArmPose.EMPTY;
+            }
+        }, ModItems.CHROMITE_SNIPER.get());
     }
 }

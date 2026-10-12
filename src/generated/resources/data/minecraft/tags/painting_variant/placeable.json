@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "alittlebitofeverything:doobie_wap",
+      "required": false
+    },
+    {
+      "id": "alittlebitofeverything:eye_see_you",
+      "required": false
+    },
+    {
+      "id": "alittlebitofeverything:strawberry_moonshine",
+      "required": false
+    }
+  ]
+}

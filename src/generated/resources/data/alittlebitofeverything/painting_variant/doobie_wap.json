@@ -1,0 +1,13 @@
+{
+  "asset_id": "alittlebitofeverything:doobie_wap",
+  "author": {
+    "color": "gray",
+    "translate": "painting.alittlebitofeverything.doobie_wap.author"
+  },
+  "height": 4,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.alittlebitofeverything.doobie_wap.title"
+  },
+  "width": 4
+}

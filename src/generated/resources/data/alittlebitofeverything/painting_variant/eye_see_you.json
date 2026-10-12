@@ -1,0 +1,13 @@
+{
+  "asset_id": "alittlebitofeverything:eye_see_you",
+  "author": {
+    "color": "gray",
+    "translate": "painting.alittlebitofeverything.eye_see_you.author"
+  },
+  "height": 1,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.alittlebitofeverything.eye_see_you.title"
+  },
+  "width": 1
+}

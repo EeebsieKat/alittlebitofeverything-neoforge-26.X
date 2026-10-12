@@ -50,6 +50,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHROMITE_HALBERD);
                         output.accept(ModItems.CHROMITE_SCYTHIA);
 
+                        output.accept(ModItems.CHROMITE_GLOCK);
+                        output.accept(ModItems.CHROMITE_SNIPER);
+
                         output.accept(ModItems.RAW_OLIVINE);
                         output.accept(ModItems.OLIVINE);
 
@@ -112,6 +115,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CHROMITE_LAMP);
 
                         output.accept(ModBlocks.FOOD_PRINTER);
+                        output.accept(ModBlocks.BRASS_FLOWER);
                     })
 
                     .build());

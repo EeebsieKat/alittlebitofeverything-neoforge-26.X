@@ -4,6 +4,8 @@ import net.eeebsiekat.bitsofeverything.ALittleBitofEverything;
 import net.eeebsiekat.bitsofeverything.food.ModFoods;
 import net.eeebsiekat.bitsofeverything.item.custom.DatapadItem;
 import net.eeebsiekat.bitsofeverything.item.custom.MetalDetectorItem;
+import net.eeebsiekat.bitsofeverything.item.custom.PistolItem;
+import net.eeebsiekat.bitsofeverything.item.custom.SniperItem;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.Foods;
@@ -106,6 +108,11 @@ public class ModItems {
     // NOTE: Make a new projectile for this!! (Scythian Bolt)
     public static final DeferredItem<Item> CHROMITE_SCYTHIA = ITEMS.registerItem("chromite_scythia",
             properties -> new BowItem(properties.durability(750).fireResistant()));
+
+    public static final DeferredItem<Item> CHROMITE_GLOCK = ITEMS.registerItem("chromite_glock",
+            properties -> new PistolItem(properties.stacksTo(1).durability(640).fireResistant()));
+    public static final DeferredItem<Item> CHROMITE_SNIPER = ITEMS.registerItem("chromite_sniper",
+            properties -> new SniperItem(properties.stacksTo(1).durability(640*2).fireResistant()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

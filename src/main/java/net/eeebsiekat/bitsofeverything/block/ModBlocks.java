@@ -1,6 +1,7 @@
 package net.eeebsiekat.bitsofeverything.block;
 
 import net.eeebsiekat.bitsofeverything.ALittleBitofEverything;
+import net.eeebsiekat.bitsofeverything.block.custom.BrassFlowerBlock;
 import net.eeebsiekat.bitsofeverything.block.custom.ChromiteLampBlock;
 import net.eeebsiekat.bitsofeverything.block.custom.FoodPrinterBlock;
 import net.eeebsiekat.bitsofeverything.item.ModItems;
@@ -154,6 +155,12 @@ public class ModBlocks {
                     .strength(3f)
                     .sound(SoundType.DEEPSLATE)
                     .lightLevel(state -> state.getValue(ChromiteLampBlock.CLICKED) ? 15 : 0)));
+
+    public static final DeferredBlock<Block> BRASS_FLOWER = registerBlock("brass_flower",
+            properties -> new BrassFlowerBlock(properties.strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.METAL)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function, Component... components) {
         DeferredBlock<T> toReturn = BLOCKS.registerBlock(name, function);

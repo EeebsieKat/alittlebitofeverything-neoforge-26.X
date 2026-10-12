@@ -28,6 +28,8 @@ public class ModTags {
         public static final TagKey<Item> LANCES = createTag("lances");
         public static final TagKey<Item> GREATSWORDS = createTag("greatswords");
 
+        public static final TagKey<Item> GUN_BULLETS = createTag("gun_bullets");
+
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(Identifier.fromNamespaceAndPath(ALittleBitofEverything.MOD_ID, name));
         }

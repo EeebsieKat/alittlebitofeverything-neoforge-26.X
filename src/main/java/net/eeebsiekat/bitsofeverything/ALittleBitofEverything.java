@@ -2,6 +2,7 @@ package net.eeebsiekat.bitsofeverything;
 
 import net.eeebsiekat.bitsofeverything.block.ModBlocks;
 import net.eeebsiekat.bitsofeverything.item.ModItems;
+import net.eeebsiekat.bitsofeverything.stat.ModStats;
 import net.eeebsiekat.bitsofeverything.tab.ModCreativeModeTabs;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import org.slf4j.Logger;
@@ -33,6 +34,7 @@ public class ALittleBitofEverything {
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModStats.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);

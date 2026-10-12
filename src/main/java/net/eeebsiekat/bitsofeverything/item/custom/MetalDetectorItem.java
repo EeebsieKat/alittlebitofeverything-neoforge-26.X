@@ -1,5 +1,6 @@
 package net.eeebsiekat.bitsofeverything.item.custom;
 
+import net.eeebsiekat.bitsofeverything.stat.ModStats;
 import net.eeebsiekat.bitsofeverything.tags.ModTags;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
@@ -56,6 +57,8 @@ public class MetalDetectorItem extends Item {
 
                     // Spawn particles
                     spawnFoundParticles(level, positionClicked, blockState);
+
+                    player.awardStat(ModStats.VALUABLES_FOUND.get() ,1);
 
                     break;
                 }

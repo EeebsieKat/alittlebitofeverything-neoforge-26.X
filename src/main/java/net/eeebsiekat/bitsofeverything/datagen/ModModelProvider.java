@@ -75,6 +75,9 @@ public class ModModelProvider extends ModelProvider {
         itemModels.createFlatItemModel(ModItems.CHROMITE_SCYTHIA.get(), ModelTemplates.BOW);
         itemModels.generateBow(ModItems.CHROMITE_SCYTHIA.get());
 
+        itemModels.declareCustomModelItem(ModItems.CHROMITE_GLOCK.get());
+        itemModels.declareCustomModelItem(ModItems.CHROMITE_SNIPER.get());
+
 
         //Blocks
         blockModels.createTrivialCube(ModBlocks.ROSE_SPAR_BLOCK.get());
@@ -97,6 +100,7 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createTrivialCube(ModBlocks.OLIVINE_ROSE_SPAR_ORE.get());
         blockModels.createTrivialCube(ModBlocks.PIGEONITE_ROSE_SPAR_ORE.get());
         blockModels.createTrivialCube(ModBlocks.FOOD_PRINTER.get());
+        blockModels.createNonTemplateModelBlock(ModBlocks.BRASS_FLOWER.get());
 
         blockModels.family(ModBlocks.BRECCIA.get())
                 .stairs(ModBlocks.BRECCIA_STAIRS.get())

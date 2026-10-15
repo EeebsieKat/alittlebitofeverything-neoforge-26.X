@@ -16,6 +16,10 @@ public class ModFoods {
             .nutrition(3)
             .saturationModifier(0.5f)
             .build();
+    public static final FoodProperties CUCUMBER = new FoodProperties.Builder()
+            .nutrition(2)
+            .saturationModifier(0.1f)
+            .build();
 
     public static final Consumable FROMAGE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(0.5f)
@@ -27,5 +31,8 @@ public class ModFoods {
             .build();
     public static final Consumable SUSPICIOUS_FROMAGE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(0.5f)
+            .build();
+    public static final Consumable CUCUMBER_CONSUMABLE = Consumables.defaultFood()
+            .consumeSeconds(1.0f)
             .build();
 }

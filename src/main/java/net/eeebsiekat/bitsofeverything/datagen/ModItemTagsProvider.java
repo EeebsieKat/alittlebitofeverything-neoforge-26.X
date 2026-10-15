@@ -5,6 +5,8 @@ import net.eeebsiekat.bitsofeverything.item.ModItems;
 import net.eeebsiekat.bitsofeverything.tags.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.references.BlockItemIds;
+import net.minecraft.references.ItemIds;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.data.ItemTagsProvider;
@@ -19,37 +21,37 @@ public class ModItemTagsProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(ModTags.Items.CARBON_LIKES)
-                .add(ModItems.CARBON.get());
+                .add(ModItems.getRK(ModItems.CARBON.get()));
 
         tag(ModTags.Items.CHROMITE_REPAIRABLES)
-                .add(ModItems.CHROMITE.get());
+                .add(ModItems.getRK(ModItems.CHROMITE.get()));
 
         tag(ItemTags.SWORDS)
-                .add(ModItems.CHROMITE_SABRE.get());
+                .add(ModItems.getRK(ModItems.CHROMITE_SABRE.get()));
         tag(ItemTags.PICKAXES)
-                .add(ModItems.CHROMITE_PICKAXE.get());
+                .add(ModItems.getRK(ModItems.CHROMITE_PICKAXE.get()));
         tag(ItemTags.AXES)
-                .add(ModItems.CHROMITE_AXE.get());
+                .add(ModItems.getRK(ModItems.CHROMITE_AXE.get()));
         tag(ItemTags.SHOVELS)
-                .add(ModItems.CHROMITE_SHOVEL.get());
+                .add(ModItems.getRK(ModItems.CHROMITE_SHOVEL.get()));
         tag(ItemTags.HOES)
-                .add(ModItems.CHROMITE_HOE.get());
+                .add(ModItems.getRK(ModItems.CHROMITE_HOE.get()));
         tag(ItemTags.SPEARS)
-                .add(ModItems.CHROMITE_SPEAR.get());
+                .add(ModItems.getRK(ModItems.CHROMITE_SPEAR.get()));
         tag(ModTags.Items.LANCES)
-                .add(ModItems.CHROMITE_LANCE.get());
+                .add(ModItems.getRK(ModItems.CHROMITE_LANCE.get()));
         tag(ModTags.Items.GREATSWORDS)
-                .add(ModItems.CHROMITE_GREATSWORD.get());
+                .add(ModItems.getRK(ModItems.CHROMITE_GREATSWORD.get()));
 
-        tag(ItemTags.HEAD_ARMOR).add(ModItems.CHROMITE_HELMET.get());
-        tag(ItemTags.CHEST_ARMOR).add(ModItems.CHROMITE_CHESTPLATE.get());
-        tag(ItemTags.LEG_ARMOR).add(ModItems.CHROMITE_LEGGINGS.get());
-        tag(ItemTags.FOOT_ARMOR).add(ModItems.CHROMITE_BOOTS.get());
+        tag(ItemTags.HEAD_ARMOR).add(ModItems.getRK(ModItems.CHROMITE_HELMET.get()));
+        tag(ItemTags.CHEST_ARMOR).add(ModItems.getRK(ModItems.CHROMITE_CHESTPLATE.get()));
+        tag(ItemTags.LEG_ARMOR).add(ModItems.getRK(ModItems.CHROMITE_LEGGINGS.get()));
+        tag(ItemTags.FOOT_ARMOR).add(ModItems.getRK(ModItems.CHROMITE_BOOTS.get()));
 
-        tag(ItemTags.BOW_ENCHANTABLE).add(ModItems.CHROMITE_SCYTHIA.get());
+        tag(ItemTags.BOW_ENCHANTABLE).add(ModItems.getRK(ModItems.CHROMITE_SCYTHIA.get()));
 
         tag(ModTags.Items.GUN_BULLETS)
-                .add(Items.SKELETON_SKULL)
-                .add(Items.WITHER_SKELETON_SKULL);
+                .add(BlockItemIds.SKELETON_SKULL.item())
+                .add(BlockItemIds.WITHER_SKELETON_SKULL.item());
     }
 }

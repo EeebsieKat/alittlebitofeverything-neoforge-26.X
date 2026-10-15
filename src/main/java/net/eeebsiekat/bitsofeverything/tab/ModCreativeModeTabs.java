@@ -67,6 +67,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SUSPICIOUS_FROMAGE);
 
                         output.accept(ModItems.CARBON);
+
+                        output.accept(ModItems.CUCUMBER_SEEDS);
                     })
 
                     .build());

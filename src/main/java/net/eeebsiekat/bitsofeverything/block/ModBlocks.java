@@ -3,9 +3,12 @@ package net.eeebsiekat.bitsofeverything.block;
 import net.eeebsiekat.bitsofeverything.ALittleBitofEverything;
 import net.eeebsiekat.bitsofeverything.block.custom.BrassFlowerBlock;
 import net.eeebsiekat.bitsofeverything.block.custom.ChromiteLampBlock;
+import net.eeebsiekat.bitsofeverything.block.custom.CucumberCropBlock;
 import net.eeebsiekat.bitsofeverything.block.custom.FoodPrinterBlock;
 import net.eeebsiekat.bitsofeverything.item.ModItems;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -162,6 +165,10 @@ public class ModBlocks {
                     .strength(3f)
                     .sound(SoundType.METAL)));
 
+    public static final DeferredBlock<Block> CUCUMBER_CROP = BLOCKS.registerBlock("cucumber_crop",
+            properties -> new CucumberCropBlock(properties.randomTicks().sound(SoundType.CROP)
+                    .instabreak().noCollision().pushReaction(PushReaction.DESTROY)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function, Component... components) {
         DeferredBlock<T> toReturn = BLOCKS.registerBlock(name, function);
         registerBlockItem(name, toReturn, components);
@@ -188,6 +195,11 @@ public class ModBlocks {
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.registerItem(name, properties -> new BlockItem(block.get(), properties.useBlockDescriptionPrefix()));
+    }
+
+
+    public static ResourceKey<Block> getRK(Block block) {
+        return BuiltInRegistries.BLOCK.getResourceKey(block).get();
     }
 
     public static void register(IEventBus eventBus) {

@@ -1,7 +1,9 @@
 package net.eeebsiekat.bitsofeverything.datagen;
 
 import net.eeebsiekat.bitsofeverything.block.ModBlocks;
+import net.eeebsiekat.bitsofeverything.block.custom.CucumberCropBlock;
 import net.eeebsiekat.bitsofeverything.item.ModItems;
+import net.minecraft.advancements.predicates.StatePropertiesPredicate;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -17,6 +19,7 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
 import java.util.Set;
@@ -77,6 +80,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                         ModItems.CHROMITE_SHARD.get(), 2, 5));
 
         dropSelf(ModBlocks.FOOD_PRINTER.get());
+
+        add(ModBlocks.CUCUMBER_CROP.get(), createCropDrops(ModBlocks.CUCUMBER_CROP.get(),
+                ModItems.CUCUMBER.get(), ModItems.CUCUMBER_SEEDS.get(), LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.CUCUMBER_CROP.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CucumberCropBlock.AGE, 3))));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minDrops, float maxDrops) {

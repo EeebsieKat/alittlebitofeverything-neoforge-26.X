@@ -40,6 +40,9 @@
 
   "item.alittlebitofeverything.carbon": "Carbon",
 
+  "item.alittlebitofeverything.cucumber": "Cucumber",
+  "item.alittlebitofeverything.cucumber_seeds": "Cucumber Seeds",
+
   "item.alittlebitofeverything.metal_detector.no_valueables": "No Valuables Found",
 
   "block.alittlebitofeverything.rose_spar_stone": "Rose Spar Stone",
@@ -77,6 +80,8 @@
 
   "block.alittlebitofeverything.sintered_breccia_stairs": "Sintered Breccia Stairs",
   "block.alittlebitofeverything.sintered_breccia_slab": "Sintered Breccia Slab",
+
+  "block.alittlebitofeverything.cucumber_crop": "Cucumbers",
 
   "painting.alittlebitofeverything.doobie_wap.title": "Doobie Wap",
   "painting.alittlebitofeverything.doobie_wap.author": "EeebsieKat",

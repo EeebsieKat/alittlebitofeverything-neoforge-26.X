@@ -3,6 +3,7 @@ package net.eeebsiekat.bitsofeverything.datagen;
 import net.eeebsiekat.bitsofeverything.ALittleBitofEverything;
 import net.eeebsiekat.bitsofeverything.block.ModBlocks;
 import net.eeebsiekat.bitsofeverything.block.custom.ChromiteLampBlock;
+import net.eeebsiekat.bitsofeverything.block.custom.CucumberCropBlock;
 import net.eeebsiekat.bitsofeverything.item.ModArmorMaterials;
 import net.eeebsiekat.bitsofeverything.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
@@ -51,6 +52,8 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.FROMAGE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.SINTERED_FROMAGE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.SUSPICIOUS_FROMAGE.get(), ModelTemplates.FLAT_ITEM);
+
+        itemModels.generateFlatItem(ModItems.CUCUMBER.get(), ModelTemplates.FLAT_ITEM);
 
         itemModels.generateFlatItem(ModItems.CARBON.get(), ModelTemplates.FLAT_ITEM);
 
@@ -122,6 +125,8 @@ public class ModModelProvider extends ModelProvider {
                         BlockModelGenerators.plainVariant(blockModels.createSuffixedVariant(ModBlocks.CHROMITE_LAMP.get(), "_on", ModelTemplates.CUBE_ALL, TextureMapping::cube)),
                         BlockModelGenerators.plainVariant(TexturedModel.CUBE.create(ModBlocks.CHROMITE_LAMP.get(), blockModels.modelOutput))))
         );
+
+        blockModels.createCropBlock(ModBlocks.CUCUMBER_CROP.get(), CucumberCropBlock.AGE, 0, 1, 2, 3);
     }
 
     private static final ModelTemplate LANCE_IN_HAND = new ModelTemplate(

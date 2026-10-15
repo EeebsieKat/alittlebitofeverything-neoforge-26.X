@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "group": "chromite",
   "key": {
     "C": "alittlebitofeverything:chromite"

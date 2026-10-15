@@ -1,13 +1,16 @@
 package net.eeebsiekat.bitsofeverything.item;
 
 import net.eeebsiekat.bitsofeverything.ALittleBitofEverything;
+import net.eeebsiekat.bitsofeverything.block.ModBlocks;
 import net.eeebsiekat.bitsofeverything.food.ModFoods;
 import net.eeebsiekat.bitsofeverything.item.custom.DatapadItem;
 import net.eeebsiekat.bitsofeverything.item.custom.MetalDetectorItem;
 import net.eeebsiekat.bitsofeverything.item.custom.PistolItem;
 import net.eeebsiekat.bitsofeverything.item.custom.SniperItem;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.SuspiciousStewEffects;
@@ -51,6 +54,9 @@ public class ModItems {
             properties -> new Item(properties.food(ModFoods.FROMAGE, ModFoods.FROMAGE_CONSUMABLE)));
     public static final DeferredItem<Item> SINTERED_FROMAGE = ITEMS.registerItem("sintered_fromage",
             properties -> new Item(properties.food(ModFoods.SINTERED_FROMAGE, ModFoods.SINTERED_FROMAGE_CONSUMABLE)));
+
+    public static final DeferredItem<Item> CUCUMBER = ITEMS.registerItem("cucumber",
+            properties -> new Item(properties.food(ModFoods.CUCUMBER, ModFoods.CUCUMBER_CONSUMABLE)));
 
     public static final DeferredItem<Item> CARBON = ITEMS.registerItem("carbon",
             properties -> new Item(properties.stacksTo(16)));
@@ -113,6 +119,14 @@ public class ModItems {
             properties -> new PistolItem(properties.stacksTo(1).durability(640).fireResistant()));
     public static final DeferredItem<Item> CHROMITE_SNIPER = ITEMS.registerItem("chromite_sniper",
             properties -> new SniperItem(properties.stacksTo(1).durability(640*2).fireResistant()));
+
+    public static final DeferredItem<Item> CUCUMBER_SEEDS = ITEMS.registerItem("cucumber_seeds",
+            properties -> new BlockItem(ModBlocks.CUCUMBER_CROP.get(), properties));
+
+
+    public static ResourceKey<Item> getRK(Item item) {
+        return BuiltInRegistries.ITEM.getResourceKey(item).get();
+    }
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

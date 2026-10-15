@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "group": "rose_spar",
   "key": {
     "A": "alittlebitofeverything:rose_spar_shard"
